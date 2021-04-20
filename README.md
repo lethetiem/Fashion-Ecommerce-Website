@@ -8,7 +8,7 @@
 
 ### Git Guide
 Bước 1: Thực hiện Clone repository trên github về máy
-> Git clone https://github.com/nghoanglong/Inventory-Management-System.git
+> Git clone https://github.com/lethetiem/SaleOnlineWebDeveloper.git
 
 Sau khi clone về, ta sẽ có những branch như sau trên máy
 
