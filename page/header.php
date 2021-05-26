@@ -8,7 +8,7 @@
           </div>
           <nav class="header__nav">
             <div class="nav__menu">
-              <a href="#" class="nav__menu-parrent">Shop</a>
+              <a href="/SaleOnlineWebDeveloper/page/index.php?manager=All" class="nav__menu-parrent">Shop</a>
               <div class="nav__mega-container">
                 <div class="nav__mega">
                   <ul class="nav__mega-children">
@@ -69,7 +69,7 @@
                 <i class="fas fa-search btn__small"></i>
               </button>
               <button class="header__search-btn header__search-close">
-                <i class="fas fa-times btn__small"></i>
+                <i class="fas fa-times btn__small btn__small-search"></i>
               </button>
             </form>
           </div>

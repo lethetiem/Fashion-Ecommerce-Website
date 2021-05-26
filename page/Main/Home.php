@@ -1,5 +1,5 @@
 <div class="main-container">
-        <div class="main__item flex__panel">
+        <div class="main__item flex__panel flex__panel-2">
           <a href="./Layouts/collections/all/all.html" class="panel__item-link">
             <div class="panel__item-container">
               <div class="panel__item-img">
@@ -13,7 +13,7 @@
             <h1 class="panel__item-title">SPRING '21 WORLD TOUR</h1>
           </a>
         </div>
-        <div class="main__item flex__panel">
+        <div class="main__item flex__panel flex__panel-2">
           <div class="panel__item">
             <a href="#" class="panel__item-link">
               <div class="panel__item-img">
@@ -33,7 +33,7 @@
     </div>
     <div class="section-main">
       <div class="main-container">
-        <div class="main__item flex__panel">
+        <div class="main__item flex__panel flex__panel-2">
           <a href="#" class="panel__item-link">
             <div class="panel__item-container">
               <div class="panel__item-img">
@@ -51,7 +51,7 @@
     </div>
     <div class="section-main">
       <div class="main-container">
-        <div class="main__item flex__panel">
+        <div class="main__item flex__panel flex__panel-2">
           <a href="#" class="panel__item-link">
             <div class="panel__item-container">
               <div class="panel__item-img">
@@ -65,7 +65,7 @@
             <h1 class="panel__item-title">HEADWEAR</h1>
           </a>
         </div>
-        <div class="main__item flex__panel">
+        <div class="main__item flex__panel flex__panel-2">
           <a href="#" class="panel__item-link">
             <div class="panel__item-container">
               <div class="panel__item-img">
@@ -83,7 +83,7 @@
     </div>
     <div class="section-main">
       <div class="main-container">
-        <div class="main__item flex__panel">
+        <div class="main__item flex__panel flex__panel-2">
           <a href="#" class="panel__item-link">
             <div class="panel__item-container">
               <div class="panel__item-img">

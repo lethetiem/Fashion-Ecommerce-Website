@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Để icon -->
+    <link rel="stylesheet" href="./FontAwesome/css/all.min.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/FontAwesome/css/all.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"

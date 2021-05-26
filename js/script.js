@@ -18,3 +18,7 @@ closeSearchForm.addEventListener("click", (e) => {
   e.preventDefault();
   headerSearch.classList.remove("reveal");
 });
+
+const increaseBtn = document.querySelector(".increase");
+const decreaseBtn = document.querySelector(".decrease");
+console.log(increaseBtn, decreaseBtn);
