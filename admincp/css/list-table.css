@@ -1,0 +1,44 @@
+.list-table {
+  margin-left: 315px;
+}
+.styled-list-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-list-table thead tr {
+  background-color: #293949;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-list-table th,
+.styled-list-table td {
+  padding: 12px 15px;
+}
+.styled-list-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-list-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-list-table tbody tr:last-of-type {
+  border-bottom: 2px solid #293949;
+}
+.styled-list-table tbody tr.active-row {
+  font-weight: bold;
+  color: #293949;
+}
+
+/* btn */
+.btn-delete-product,
+.btn-change-product {
+  color: #293949;
+}
+.btn-delete-product {
+  margin-right: 5px;
+}
