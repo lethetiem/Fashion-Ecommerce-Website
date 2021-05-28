@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/menu-admin.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/add-table.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/list-table.css">
+    <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/change-table.css">
     <!-- icon -->
     <link rel="stylesheet" href="./FontAwesome/css/all.min.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/FontAwesome/css/all.min.css" />
