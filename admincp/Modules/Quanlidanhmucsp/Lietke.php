@@ -45,7 +45,7 @@
                 <td>1</td>
                 <td>
                     <a href="#"><i class="fas fa-times btn-delete-product"></i></a>
-                    <a href="#"><i class="fas fa-cog btn-change-product"></i></i></a>
+                    <a href="/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlidanhmucsp/Sua.php"><i class="fas fa-cog btn-change-product"></i></i></a>
                 </td>
             </tr>
             <tr class="active-row">
