@@ -12,6 +12,11 @@
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlidanhmucsp/Lietke.php");
     }elseif($mnn == 'Quanlidanhmucsanpham' && $query == 'Sua'){
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlidanhmucsp/Sua.php");
+    }elseif($mnn == 'Quanlisanpham' && $query == 'Them'){
+        include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlisp/Them.php");
+        include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlisp/Lietke.php");
+    }elseif($mnn == 'Quanlisanpham' && $query == 'Sua'){
+        include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlisp/Sua.php");
     }
     else{
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Welcome.php");    

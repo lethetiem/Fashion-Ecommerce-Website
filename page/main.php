@@ -1,42 +1,63 @@
  <div class="section-main">
-     <?php
+   <?php
+   
      if(isset($_GET['manager'])){
        $mnn = $_GET['manager'];
      }else{
         $mnn = "";
      }
-     if($mnn == 'Features'){
-       include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Features.php");
-     }elseif($mnn == 'Bag'){
-       include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Bag.php");
-     }elseif($mnn == 'Account'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Account.php");
-     }elseif($mnn == 'Register'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Register.php");
-     }elseif($mnn == 'New'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/New.php");
-     }elseif($mnn == 'All'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/All.php");
-     }elseif($mnn == 'Sweats'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Sweats.php");
-     }elseif($mnn == 'Tees'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Tees.php");
-     }elseif($mnn == 'Bottoms'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Bottoms.php");
-     }elseif($mnn == 'Headwear'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Headwear.php");
-     }elseif($mnn == 'Accessories'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Accessories.php");
-     }elseif($mnn == 'Outerwear'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Outerwear.php");
-     }elseif($mnn == 'Tops'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Tops.php");
-     }elseif($mnn == 'Womens'){
-        include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Womens.php");
+
+     switch($mnn){
+         case 'Features':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Features.php");
+            break;
+         case 'Bag':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Bag.php");
+            break;
+         case 'Account':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Account.php");
+            break;
+         case 'Register':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Register.php");
+            break;
+         case 'New':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/New.php");
+            break;
+         case 'All':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/All.php");
+            break;
+         case 'Sweats':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Sweats.php");
+            break;
+         case 'Tees':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Tees.php");
+            break;
+         case 'Bottoms':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Bottoms.php");
+            break;
+         case 'Headwear':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Headwear.php");
+            break;
+         case 'Accessories':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Accessories.php");
+            break;
+         case 'Outerwear':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Outerwear.php");
+            break;
+         case 'Tops':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Tops.php");
+            break;
+         case 'Womens':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Womens.php");
+
+         default:
+            include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
+               break;
      }
-     else{
-       include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
-     }
+
+
+
+
      ?>
     </div>
 

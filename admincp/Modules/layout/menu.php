@@ -28,7 +28,7 @@
             <a href="index.php?action=Quanlidanhmucsanpham&query=Them">Quản lý danh mục sản phẩm</a>
           </li>
           <li>
-            <a href="ui-nestable-list.html">Quản lý sản phẩm</a>
+            <a href="index.php?action=Quanlisanpham&query=Them">Quản lý sản phẩm</a>
           </li>
         </ul>
       </li>
@@ -43,10 +43,10 @@
         </a>
         <ul>
           <li>
-            <a href="ui-nestable-list.html">Quản lý bài viết</a>
+            <a href="index.php?action=Quanlidanhmucsanpham&query=Them">Quản lý bài viết</a>
           </li>
           <li>
-            <a href="ui-nestable-list.html">Quản lý danh mục bài viết</a>
+            <a href="index.php?action=Quanlidanhmucsanpham&query=Them">Quản lý danh mục bài viết</a>
           </li>
         </ul>
       </li>
