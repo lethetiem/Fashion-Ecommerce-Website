@@ -7,7 +7,6 @@
           <p><a class="bca" >By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</a1></p>    
             <a href = "/SaleOnlineWebDeveloper/page/index.php?manager=Register" class = "Register" > CREATE ACCOUNT </a>
         </div>
-                
           <div id="login">
             <form action="/SaleOnlineWebDeveloper/page/login.php" method="POST">
               <h2 class="customers">REGISTERED CUSTOMERS</h2>

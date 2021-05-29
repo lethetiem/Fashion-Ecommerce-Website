@@ -12,6 +12,7 @@
     
     
     
+    
   
     
     
@@ -89,11 +90,14 @@ input.login1   {
     width: 500px ;
     height: 35px ;
     margin-top: 20px;
-    background-color: black;
+    background-color:black;
     color: white;
     cursor: pointer;
     text-align: center;
 }
+
+
+
 .flname{
     width: 246px ;
     height: 35px ;

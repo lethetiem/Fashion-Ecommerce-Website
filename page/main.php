@@ -1,6 +1,6 @@
  <div class="section-main">
    <?php
-   
+
      if(isset($_GET['manager'])){
        $mnn = $_GET['manager'];
      }else{
@@ -49,6 +49,7 @@
             break;
          case 'Womens':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Womens.php");
+            break;
 
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
