@@ -707,3 +707,62 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
 }
+
+/*--.--------------Feature--------------*/
+ .title{
+   text-align: center;
+   font-size: 1rem;
+ }
+.feature{
+  min-height: 100vh;
+  padding-bottom: 2rem;
+} 
+.feature .img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; 
+
+}
+.feature .img-container .image{
+  width: 30rem;
+  margin: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0 .3rem .5rem rgb(199, 177, 177);
+  overflow: hidden;
+}
+.feature .img-container .image img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+.feature .img-container .content{
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.feature .img-container .content p{
+  color: #333;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.feature .img-container .content .btn{
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  height:3rem;
+  width: 10rem;
+  border-radius: .5rem;
+  outline: none;
+  border: none;
+  background: black;
+  color: azure;
+  cursor: pointer;
+}
+.feature .img-container .content .btn:hover{
+  background: none;
+  border: .2rem solid black;
+  color: black;
+}
+
+ 
+
