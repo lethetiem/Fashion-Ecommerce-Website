@@ -1,5 +1,5 @@
 <?php
-    $sql_lietke_sp = "SELECT * FROM tbl_sanpham, tbl_danhmuc WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id ORDER BY tbl_sanpham.id DESC";
+    $sql_lietke_sp = "SELECT * FROM tbl_sanpham, tbl_danhmuc WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc ORDER BY id_sanpham DESC";
     $query_lietke_sp = mysqli_query($mysqli, $sql_lietke_sp);
 ?>
 
@@ -45,8 +45,8 @@
                     }
                     ?></td>
                 <td>
-                    <a href = "Modules/Quanlisp/Xuly.php?idsanpham=<?php echo $row['id']?>"><i class="fas fa-times btn-delete-product"></i></a> 
-                    <a href = "?action=Quanlisanpham&query=Sua&idsanpham=<?php echo $row['id']?>"><i class="fas fa-cog btn-change-prodcut"></i></a>
+                    <a href = "Modules/Quanlisp/Xuly.php?idsanpham=<?php echo $row['id_sanpham']?>"><i class="fas fa-times btn-delete-product"></i></a> 
+                    <a href = "?action=Quanlisanpham&query=Sua&idsanpham=<?php echo $row['id_sanpham']?>"><i class="fas fa-cog btn-change-prodcut"></i></a>
                 </td>
             </tr> 
                 <!-- and so on... -->

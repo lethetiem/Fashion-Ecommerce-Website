@@ -1,5 +1,5 @@
 <?php
-    $sql_Sua_danhmucsp = "SELECT * FROM tbl_danhmuc WHERE id = '$_GET[iddanhmuc]' LIMIT 1";
+    $sql_Sua_danhmucsp = "SELECT * FROM tbl_danhmuc WHERE id_danhmuc = '$_GET[iddanhmuc]' LIMIT 1";
     $query_Sua_danhmucsp = mysqli_query($mysqli, $sql_Sua_danhmucsp);
 ?>
 

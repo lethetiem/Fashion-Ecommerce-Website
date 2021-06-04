@@ -25,8 +25,8 @@
                 <td><?php echo $i ?></td>
                 <td><?php echo $row['name']?></td>
                 <td>
-                    <a href = "Modules/Quanlidanhmucsp/Xuly.php?iddanhmuc=<?php echo $row['id']?>"><i class="fas fa-times btn-delete-product"></i></a> 
-                    <a href = "?action=Quanlidanhmucsanpham&query=Sua&iddanhmuc=<?php echo $row['id']?>"><i class="fas fa-cog btn-change-prodcut"></i></a>
+                    <a href = "Modules/Quanlidanhmucsp/Xuly.php?iddanhmuc=<?php echo $row['id_danhmuc']?>"><i class="fas fa-times btn-delete-product"></i></a> 
+                    <a href = "?action=Quanlidanhmucsanpham&query=Sua&iddanhmuc=<?php echo $row['id_danhmuc']?>"><i class="fas fa-cog btn-change-prodcut"></i></a>
                 </td>
             </tr> 
                 <!-- and so on... -->

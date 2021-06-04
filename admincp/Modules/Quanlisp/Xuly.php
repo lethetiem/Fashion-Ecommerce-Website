@@ -22,25 +22,25 @@
     }elseif(isset($_POST['Suadanhmuc'])){
         if($hinhanh!=''){
             move_uploaded_file($hinhanh_tmp,'Uploads/'.$hinhanh);
-            $sql = "SELECT * FROM tbl_sanpham WHERE id = '$_GET[idsanpham]' LIMIT 1";
+            $sql = "SELECT * FROM tbl_sanpham WHERE id_sanpham = '$_GET[idsanpham]' LIMIT 1";
             $query = mysqli_query($mysqli, $sql);
             while($row = mysqli_fetch_array($query)){
                 unlink('admincp/Modules/Quanlisp/Uploads/'.$row['hinhanh']);
              }
-            $sql_update = "UPDATE tbl_sanpham SET tensp = '".$tensp."', masp = '".$masp."', giasp = '".$giasp."', soluong = '".$soluong."', hinhanh = '".$hinhanh."', tomtat = '".$tomtat."', noidung = '".$noidung."',tinhtrang = '".$tinhtrang."' WHERE id = '$_GET[idsanpham]' ";
+            $sql_update = "UPDATE tbl_sanpham SET tensp = '".$tensp."', masp = '".$masp."', giasp = '".$giasp."', soluong = '".$soluong."', hinhanh = '".$hinhanh."', tomtat = '".$tomtat."', noidung = '".$noidung."',tinhtrang = '".$tinhtrang."', id_danhmuc = '".$id_danhmuc."' WHERE id_sanpham = '$_GET[idsanpham]' ";
             }else{
-            $sql_update = "UPDATE tbl_sanpham SET tensp = '".$tensp."', masp = '".$masp."', giasp = '".$giasp."', soluong = '".$soluong."', hinhanh = '".$hinhanh."', tomtat = '".$tomtat."', noidung = '".$noidung."',tinhtrang = '".$tinhtrang."' WHERE id = '$_GET[idsanpham]' ";
+            $sql_update = "UPDATE tbl_sanpham SET tensp = '".$tensp."', masp = '".$masp."', giasp = '".$giasp."', soluong = '".$soluong."', hinhanh = '".$hinhanh."', tomtat = '".$tomtat."', noidung = '".$noidung."',tinhtrang = '".$tinhtrang."', id_danhmuc = '".$id_danhmuc."' WHERE id_sanpham = '$_GET[idsanpham]' ";
             }
         mysqli_query($mysqli, $sql_update);
         header('Location:../../index.php?action=Quanlisanpham&query=Them');
     }else{
         $id = $_GET['idsanpham'];
-        $sql = "SELECT * FROM tbl_sanpham WHERE id = '$id' LIMIT 1";
+        $sql = "SELECT * FROM tbl_sanpham WHERE id_sanpham = '$id' LIMIT 1";
         $query = mysqli_query($mysqli, $sql);
         while($row = mysqli_fetch_array($query)){
             unlink('admincp/Modules/Quanlisp/Uploads/'.$row['hinhanh']);
         }
-        $sql_xoa = "DELETE FROM tbl_sanpham WHERE id = '".$id."' ";
+        $sql_xoa = "DELETE FROM tbl_sanpham WHERE id_sanpham = '".$id."' ";
         mysqli_query($mysqli, $sql_xoa);
         header('Location:../../index.php?action=Quanlisanpham&query=Them');
     }
