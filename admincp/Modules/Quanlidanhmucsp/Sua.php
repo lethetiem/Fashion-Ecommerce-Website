@@ -7,7 +7,7 @@
 
 <div class="change-table">
     <table class="styled-change-table">
-        <form method = "POST" action="Modules/Quanlidanhmucsp/Xyly.php?iddanhmuc=<?php echo $_GET['iddanhmuc'] ?>">
+        <form method = "POST" action="Modules/Quanlidanhmucsp/Xuly.php?iddanhmuc=<?php echo $_GET['iddanhmuc'] ?>">
 
             <?php
                 while($dong = mysqli_fetch_array($query_Sua_danhmucsp)){
@@ -36,7 +36,7 @@
                        
                    </td>
                 </tr>
-                
+
                 <!-- and so on... -->
             </tbody>
 
