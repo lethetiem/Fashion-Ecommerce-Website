@@ -32,7 +32,7 @@
                 <td><?php echo $i ?></td>
                 <td><?php echo $row['masp']?></td>
                 <td><?php echo $row['tensp']?></td>
-                <td><img src="/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlisp/Uploads<?php echo $row['hinhanh']?>" width = "150px"></td>
+                <td><img src="Modules/Quanlisp/Uploads/<?php echo $row['hinhanh']?>" width = "100px"></td>
                 <td><?php echo $row['soluong']?></td>
                 <td><?php echo $row['name']?></td>
                 <td><?php echo $row['giasp']?></td>

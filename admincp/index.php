@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/list-table.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/change-table.css">
     <!-- icon -->
-    <link rel="stylesheet" href="./FontAwesome/css/all.min.css" />
+    <link rel="stylesheet" href="/SaleOnlineWebDeveloper/FontAwesome/css/all.min.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/FontAwesome/css/all.min.css" />
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

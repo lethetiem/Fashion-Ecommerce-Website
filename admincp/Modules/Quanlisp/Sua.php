@@ -51,7 +51,7 @@
                 <tr>
                     <th>Hình ảnh</th>
                     <td><input type = "file" name ="hinhanh">
-                    <img src="/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlisp/Uploads<?php echo $row['hinhanh']?>" width = "150px"></td>
+                    <img src="Modules/Quanlisp/Uploads/<?php echo $row['hinhanh']?>" width = "100px"></td>
                 </tr>
 
                 <tr>
