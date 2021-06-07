@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/admincp.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/menu-admin.css">
+    <!-- quan ly danh muc san pham -->
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/add-table.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/list-table.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/change-table.css">
+    <!-- quan ly san pham -->
+    <link rel="stylesheet" href="/SaleOnlineWebDeveloper/admincp/css/add-product-table.css">
     <!-- icon -->
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/FontAwesome/css/all.min.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/FontAwesome/css/all.min.css" />

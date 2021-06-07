@@ -1,0 +1,54 @@
+.add-product-table {
+  margin-left: 315px;
+  margin-bottom: 100px;
+}
+.styled-product-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  border: 2px solid #293949;
+}
+.styled-product-table thead tr {
+  background-color: #293949;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-product-table th,
+.styled-product-table td {
+  padding: 12px 15px;
+}
+.styled-product-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-product-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+/* .styled-product-table tbody tr:last-of-type {
+  border-bottom: 2px solid #293949;
+} */
+.styled-product-table tbody tr.active-row {
+  font-weight: bold;
+  color: #293949;
+}
+.btn-add-product-table {
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  border: 2px solid #293949;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-add-product-table:hover {
+  background-color: #293949;
+  color: white;
+}

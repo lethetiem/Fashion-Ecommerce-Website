@@ -92,7 +92,7 @@ h2 {
 
 /* Header */
 .header {
-  width: 1236px;
+  /* width: 1236px; */
   height: 60px;
   margin-left: 300px;
   background-color: white;
