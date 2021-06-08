@@ -241,7 +241,7 @@ body {
 
 /* SECTION MAIN */
 .section-main {
-  /* min-height: 70vh; */
+  min-height: 70vh;
   margin-top: 5rem;
   position: relative;
 }
@@ -709,60 +709,56 @@ body {
 }
 
 /*--.--------------Feature--------------*/
- .title{
-   text-align: center;
-   font-size: 1rem;
- }
-.feature{
+.title {
+  text-align: center;
+  font-size: 1rem;
+}
+.feature {
   min-height: 100vh;
   padding-bottom: 2rem;
-} 
-.feature .img-container{
+}
+.feature .img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%; 
-
+  width: 100%;
 }
-.feature .img-container .image{
+.feature .img-container .image {
   width: 30rem;
   margin: 2rem;
-  border-radius: .5rem;
-  box-shadow: 0 .3rem .5rem rgb(199, 177, 177);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgb(199, 177, 177);
   overflow: hidden;
 }
-.feature .img-container .image img{
+.feature .img-container .image img {
   height: 25rem;
   width: 100%;
   object-fit: cover;
 }
-.feature .img-container .content{
+.feature .img-container .content {
   padding-bottom: 2rem;
   text-align: center;
 }
-.feature .img-container .content p{
+.feature .img-container .content p {
   color: #333;
   font-size: 1rem;
   padding: 1rem;
 }
-.feature .img-container .content .btn{
+.feature .img-container .content .btn {
   font-size: 1rem;
   margin-top: 1.5rem;
-  height:3rem;
+  height: 3rem;
   width: 10rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   outline: none;
   border: none;
   background: black;
   color: azure;
   cursor: pointer;
 }
-.feature .img-container .content .btn:hover{
+.feature .img-container .content .btn:hover {
   background: none;
-  border: .2rem solid black;
+  border: 0.2rem solid black;
   color: black;
 }
-
- 
-
