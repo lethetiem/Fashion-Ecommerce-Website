@@ -1,3 +1,8 @@
+<?php
+        $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+        $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
+?> 
+ 
  <div class="section-header">
       <div class="header__container">
         <header class="header">
@@ -39,9 +44,18 @@
                     <li class="nav__mega-child">
                       <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Tops" class="nav__mega-child-link">Tops</a>
                     </li>
-                    <li class="nav__mega-child">
+                  <!-- <li class="nav__mega-child">
                       <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Womens" class="nav__mega-child-link">Womens</a>
+                    </li> -->
+                    <?php
+                          while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
+                    ?>
+                    <li class="nav__mega-child">
+                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Womens&id=<?php echo $row_danhmuc['id_danhmuc'] ?>" class="nav__mega-child-link"><?php echo $row_danhmuc['name'] ?></a>
                     </li>
+                    <?php
+                          }
+                    ?>
                   </ul>
                 </div>
               </div>

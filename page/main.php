@@ -50,7 +50,9 @@
          case 'Womens':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Womens.php");
             break;
-
+         case 'Details':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Details.php");
+            break;
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
                break;
