@@ -7,7 +7,7 @@
       <li class="collection__product">
           <div class="product__card">
             <div class="product__card-variants">
-              <a href="#" class="product__card-variant variant-card">
+              <a href="/page/main/Details.php" class="product__card-variant variant-card">
                 <div class="ratio-box">
                   <img
                     src="https://cdn.shopify.com/s/files/1/0087/6193/3920/products/1110172_OFFW_1_a0ee2c7f-8bee-4132-85df-93e0e4b721d4_900x.jpg?v=1620752054"
