@@ -16,6 +16,7 @@
       rel="stylesheet"
     /> 
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/account.css">
+    <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/details.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/style.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/reset.css" />
     <title>HEARTUALL</title>
