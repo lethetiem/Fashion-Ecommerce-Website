@@ -9,8 +9,9 @@
 
         
 <p align = "center"> Details </p>
-
-            <a width = "20%"  href="/SaleOnlineWebDeveloper/page/index.php?manager=Details&id=<?php echo $row_pro['id_sanpham'] ?>" class="product__card-variant variant-card">
+        <form method="POST" action="Main/Addbag.php?idsanpham=<?php echo $row_chitiet['id_sanpham'] ?>">
+            <div class="product__card-variants">
+              <a width = "50%"  href="/SaleOnlineWebDeveloper/page/index.php?manager=Details&id=<?php echo $row_chitiet['id_sanpham'] ?>" class="product__card-variant variant-card">
                 <div class="ratio-box">
                   <img
                     src="../admincp/Modules/Quanlisp/Uploads/<?php echo $row_chitiet['hinhanh'] ?>"
@@ -18,9 +19,11 @@
                     class="lazyautosizes lazyloaded"
                   />
                 </div>
-            </a>
-            
+              </a>
+            </div>
 
+            <input class ="themgiohang" name = "themgiohang" type ="submit" value="Thêm giỏ hàng">
+        </form>
 <?php
         }
 ?>
