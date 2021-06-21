@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    /*if ( !session_id() ) session_start();
 
     include('/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php');
     //them so luong 
@@ -40,8 +40,9 @@
         }
     }
 
-   header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+     header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+    //   print_r($_SESSION['cart']);
     
-}
+}*/
 
 ?>
