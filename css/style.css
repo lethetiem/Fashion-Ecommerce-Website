@@ -707,7 +707,13 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
 }
-
+@media only screen and (min-width: 48em) {
+  .page-cart__form {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    grid-column-gap: 2.5rem;
+  }
+}
 /*--.--------------Feature--------------*/
 .title {
   text-align: center;
