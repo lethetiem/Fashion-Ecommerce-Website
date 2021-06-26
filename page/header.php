@@ -77,9 +77,9 @@
         </header>
         <div class="header__search">
           <div class="header__search-container">
-            <form action="" method="get" class="header__search-form">
-              <input type="text" class="search__input" placeholder="SEARCH" />
-              <button class="header__search-btn header__search-submit">
+            <form action="/SaleOnlineWebDeveloper/page/index.php?manager=SearchProduct" method="POST" class="header__search-form">
+              <input type="text" class="search__input" placeholder="SEARCH" name="text__keyword" />
+              <button class="header__search-btn header__search-submit" name="Search__product__keyword" type="submit">
                 <i class="fas fa-search btn__small"></i>
               </button>
               <button class="header__search-btn header__search-close">

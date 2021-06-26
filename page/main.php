@@ -53,6 +53,9 @@
          case 'Details':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Details.php");
             break;
+         case 'SearchProduct':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/SearchProduct.php");
+            break;
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
                break;
