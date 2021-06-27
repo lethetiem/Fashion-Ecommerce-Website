@@ -15,7 +15,7 @@ if ($mysqli->connect_errno) {
       $lastname = $_POST['lastname'];
       $username = $_POST['username'];
       $password = md5($_POST['password']);
-      $dang_ky = mysql_query($mysqli, "INSERT INTO tbl_Register(firstname, lastname, username, password) VALUE('".$firstname."','".$lastname."','".$username."','".$password."')");
+      $dang_ky = mysqli_query($mysqli, "INSERT INTO tbl_Register(firstname, lastname, username, password) VALUE('".$firstname."','".$lastname."','".$username."','".$password."')");
 
     if($dang_ky){
     echo '<p style="color:green">Creat account sucessfully"</p>';
