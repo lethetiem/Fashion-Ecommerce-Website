@@ -18,40 +18,13 @@
                 <div class="nav__mega">
                   <ul class="nav__mega-children">
                     <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=New" class="nav__mega-child-link">New</a>
-                    </li>
-                    <li class="nav__mega-child">
                       <a href="/SaleOnlineWebDeveloper/page/index.php?manager=All" class="nav__mega-child-link">All</a>
                     </li>
-                    <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Sweats" class="nav__mega-child-link">Sweats</a>
-                    </li>
-                    <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Tees" class="nav__mega-child-link">Tees</a>
-                    </li>
-                    <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Bottoms" class="nav__mega-child-link">Bottoms</a>
-                    </li>
-                    <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Headwear" class="nav__mega-child-link">Headwear</a>
-                    </li>
-                    <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Accessories" class="nav__mega-child-link">Accessories</a>
-                    </li>
-                    <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Outerwear" class="nav__mega-child-link">Outerwear</a>
-                    </li>
-                    <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Tops" class="nav__mega-child-link">Tops</a>
-                    </li>
-                  <!-- <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Womens" class="nav__mega-child-link">Womens</a>
-                    </li> -->
                     <?php
                           while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
                     ?>
                     <li class="nav__mega-child">
-                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Womens&id=<?php echo $row_danhmuc['id_danhmuc'] ?>" class="nav__mega-child-link"><?php echo $row_danhmuc['name'] ?></a>
+                      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=ProductCategory&id=<?php echo $row_danhmuc['id_danhmuc'] ?>" class="nav__mega-child-link"><?php echo $row_danhmuc['name'] ?></a>
                     </li>
                     <?php
                           }
@@ -77,9 +50,9 @@
         </header>
         <div class="header__search">
           <div class="header__search-container">
-            <form action="" method="get" class="header__search-form">
-              <input type="text" class="search__input" placeholder="SEARCH" />
-              <button class="header__search-btn header__search-submit">
+            <form action="/SaleOnlineWebDeveloper/page/index.php?manager=SearchProduct" method="POST" class="header__search-form">
+              <input type="text" class="search__input" placeholder="SEARCH" name="text__keyword" />
+              <button class="header__search-btn header__search-submit" name="Search__product__keyword" type="submit">
                 <i class="fas fa-search btn__small"></i>
               </button>
               <button class="header__search-btn header__search-close">

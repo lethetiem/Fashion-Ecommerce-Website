@@ -1,3 +1,22 @@
+<?php
+include('/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php');
+if(isset($_POST['Login'])){
+   $username = $_POST['username'];
+   $password = $_POST['password'];
+   $sql_login_index = "SELECT * FROM tbl_register WHERE username = '$username' AND password = '$password'";
+   $row = mysqli_query($mysqli, $sql_login_index);
+   $count = mysqli_num_rows($row);
+   if($count > 0){
+    $row_data = mysqli_fetch_array($row);
+    $_SESSION['btn-save'] = $row_data['lastname'];
+    header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+    }else{
+    echo('<p style = "color: red">Sai ten hoac mat khau!</p>');
+  }
+}
+  
+?>
+
 <div class="container">
         
         <h1 class="account_td">ACCOUNT</h1>
@@ -12,7 +31,11 @@
           </div>    
         </div>
           <div id="login">
+<<<<<<< HEAD
             <form id ="login_form" action="/SaleOnlineWebDeveloper/page/login.php" method="POST">
+=======
+            <form action="" method="POST">
+>>>>>>> 14d6ea41170e58f469967aba14bce7f1576dd26d
               <h2 class="customers">REGISTERED CUSTOMERS</h2>
               <input type="text" class="form-control" placeholder="user name" id ="username" name="username" required />
               <br>
@@ -20,7 +43,7 @@
               <br>
               <a href="#" class="lk"> forgot password?</a>
               <br>
-              <input class="login1"   type="submit" id="btn" value="LOG IN">
+              <input class="login1" name="Login"    type="submit" id="btn" value="LOG IN">
               </form>
                 
           </div>
