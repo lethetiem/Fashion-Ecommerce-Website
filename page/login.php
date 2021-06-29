@@ -1,3 +1,4 @@
+
 <?php
 
 	$username = $_POST['username'];
@@ -16,12 +17,32 @@
 	//Query the databse for user
 	$result = mysqli_query($db, "select * from tbl_register where username = '$username' and password = '$password' ") or die("Failed to query database " .mysqli_error());
 	$row = mysqli_fetch_array($result);
+	if($result){
 
+		$data =mysqli_fetch_assoc($result);
+		$_SESSION['customer']= $data;
+  
+	  }
+	
 	if(mysqli_num_rows($result)==1){
-		echo "Login success!!! Welcome ".$row['username'];
+		echo json_encode(array(
+			'status' => 1,
+			'message'=>'Login success!!! Welcome.'
+
+		));
+		exit;
+		
+		
+
 	}
 	else{
-		echo "Failed to login";
+		
+		echo json_encode(array(
+			'status' => 0,
+			'message'=>'Failed to login'
+
+		));
+		exit;
 	}
 
 

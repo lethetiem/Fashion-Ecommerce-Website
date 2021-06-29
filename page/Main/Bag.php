@@ -62,55 +62,6 @@ if(isset($_POST['themgiohang'])){
      
        <form action="/SaleOnlineWebDeveloper/page/index.php?manager=Bag" method = "POST" class="page__cart-form">
        
-<<<<<<< HEAD
-          
-
-            <div class="page__cart-products">    
-
-         <?php
-          while($row_fetch_giohang = mysqli_fetch_array($row_giohang)){
-        ?>
-
-
-               <div class="page__cart-product">
-                <a href="#" class="page__cart-product-img">
-                  <div class="ratio-box">
-                    <img src="../admincp/Modules/Quanlisp/Uploads/<?php echo $row_fetch_giohang['hinhanh'] ?>" alt="" class="overlay" />
-                    <img src="../admincp/Modules/Quanlisp/Uploads/" alt="" class="overlay" />
-                  </div>
-                </a>
-                <div class="page__cart-product-info">
-                  <h1 class="page__cart-product-title">
-                    <a href="#" class="page__cart-product-name"
-                      ><?php echo $row_fetch_giohang['tensp'] ?></a
-                    > 
-                    <!-- <a href="#" class="page__cart-product-name"
-                      >></a 
-                    > -->
-                    <a href="#" class="page__cart-product-remove">
-                      <span class="page__cart-product-remove-text">Remove</span>
-                    </a>
-                  </h1>
-                  <span class="page__cart-product-variant">White / M</span>
-  
-                       
-  
-                  <div class="page__cart-product-btns">
-                    <button class="page__cart-product-btn">-</button>
-                    <input type="text" class="page__cart-product-input" />
-                    <button class="page__cart-product-btn">+</button>
-                  </div>
-                  <div class="page__cart-product-price">
-                    <span>đ1,428,700</span>
-                  </div>
-                </div>
-              </div> 
-
-            <?php
-            }
-            ?> 
-            </div>
-=======
       
        
 
@@ -164,7 +115,6 @@ if(isset($_POST['themgiohang'])){
           </div>
 
 
->>>>>>> 14d6ea41170e58f469967aba14bce7f1576dd26d
          
           <div class="page__cart-sidebar" >
             <div class="page__cart-subtotal">

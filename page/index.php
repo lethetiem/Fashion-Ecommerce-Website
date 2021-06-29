@@ -1,4 +1,11 @@
-
+<?php
+     session_start();
+     //$_SESSION['customer'];
+         //header('Location:"//SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+     
+  
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
