@@ -31,23 +31,25 @@ h1.account_td {
   text-align: center;
   margin-top: 61px;
 }
+
 .register_wrap {
-  margin-top: 40px;
-  display: inline-block;
-  width: 150px;
-  position: relative;
+  padding-top: 10px ;
+  
+  width: 500px;
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 67px;
   background-color: black;
-  font-size: 15px;
-  height: 35px;
   color: white;
+  cursor: pointer;
   text-align: center;
 }
 .register {
  
   position: absolute;
  
-  top: 35%;
-  left: 16%;
+  top: 15%;
+  left: 30%;
 }
 
 .register_td {
@@ -70,10 +72,8 @@ input {
 }
 .creat_account {
   color: white;
-  padding-top: 20px;
+  
 
-  
-  
   cursor: pointer;
   
 }

@@ -22,7 +22,7 @@
         <h1 class="account_td">ACCOUNT</h1>
   
                 
-          <div id="register">
+          <div class="register">
             <form id ="register_form"action="/SaleOnlineWebDeveloper/page/register.php" method="POST">
             
               <h2 class="register_td">REGISTER</h2>
