@@ -1,3 +1,11 @@
+<?php
+  if(isset($_GET['Dangxuat']) && $_GET['Dangxuat'] == 1){
+    unset($_SESSION['login']);
+    header('Location:login.php');
+  }
+
+?>
+
 
 <!-- <ul class = "admincp_list">
     <li><a  href = "index.php?action=Quanlidanhmucsanpham&query=Them" >Qua li danh muc san pham </a></li>
@@ -50,6 +58,11 @@
           </li>
         </ul>
       </li>
+
+      <li class="sub-menu">
+         <a href="index.php?Dangxuat=1">Log Out: <?php if(isset($_SESSION['login'])){echo $_SESSION['login'];}?></a>
+      </li>
+      
       
       
       

@@ -1,3 +1,13 @@
+<?php
+    // session_start();
+    
+    // if(!isset($_SESSION['login'])){
+    //     header('Location:login.php');
+    // }
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +33,7 @@
     
     <?php
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
-       // include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/header.php");
+       //include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/header.php");
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/menu.php");
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/main.php");
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/footer.php");
