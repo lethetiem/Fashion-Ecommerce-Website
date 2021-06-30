@@ -17,12 +17,12 @@
 	//Query the databse for user
 	$result = mysqli_query($db, "select * from tbl_register where username = '$username' and password = '$password' ") or die("Failed to query database " .mysqli_error());
 	$row = mysqli_fetch_array($result);
-	if($result){
+	//if($result){
 
-		$data =mysqli_fetch_assoc($result);
-		$_SESSION['customer']= $data;
+		//$data =mysqli_fetch_assoc($result);
+		//$_SESSION['customer']= $data;
   
-	  }
+	  //}
 	
 	if(mysqli_num_rows($result)==1){
 		echo json_encode(array(
@@ -44,6 +44,7 @@
 		));
 		exit;
 	}
+	
 
 
 ?>
