@@ -1,5 +1,4 @@
 <?php
-  include('/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php');
   if(isset($_POST['btn-save'])){
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];

@@ -15,16 +15,16 @@
             <tbody>
                 <tr  class="active-row">
                     <td>
-                        <input class="product__name" type="text" name = "Tensanpham" placeholder="Tên sản phẩm">        
+                        <input class="product__name" type="text" name = "Tensanpham" placeholder="Tên sản phẩm" required>        
                     </td>
                     <td>
-                        <input class="product__name" type="text" name = "masp" placeholder="Mã sản phẩm">        
+                        <input class="product__name" type="text" name = "masp" placeholder="Mã sản phẩm" required>        
                     </td>
                     <td>
-                        <input class="product__name" type="text" name = "giasp" placeholder="Giá sản phẩm">
+                        <input class="product__name" type="text" name = "giasp" placeholder="Giá sản phẩm" required>
                     </td>
                     <td>
-                        <input class="product__name" type="text" name = "soluong" placeholder="Số lượng">
+                        <input class="product__name" type="text" name = "soluong" placeholder="Số lượng" required>
                     </td>
                     <td>
                         <select name ="tinhtrang" >
@@ -46,16 +46,16 @@
             <tbody>
                 <tr  class="active-row">
                     <td>
-                        <textarea rows = "5" name = "Noidung" style ="resize: none"></textarea>
+                        <textarea rows = "5" name = "Noidung" style ="resize: none" required></textarea>
                     </td>
                     <td>
-                        <textarea rows = "5" name = "tomtat" style = "resize: none"></textarea>
+                        <textarea rows = "5" name = "tomtat" style = "resize: none" required></textarea>
                     </td>
                     <td>
-                        <input type = "file" name ="hinhanh">
+                        <input type = "file" name ="hinhanh" required>
                     </td>
                     <td>
-                            <select  name ="danhmuc">
+                            <select  name ="danhmuc" required>
                                 <?php
                                 $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
                                 $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);

@@ -32,6 +32,9 @@
          case 'SearchProduct':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/SearchProduct.php");
             break;
+         case 'AccountDashBoard':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/AccountDashBoard.php");
+            break;
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
                break;

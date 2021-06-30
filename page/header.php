@@ -1,6 +1,15 @@
 <?php
+  ob_start();
         $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
         $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
+
+        if(isset($_GET['logout'])){
+          $id = $_GET['logout'];
+          if($id == 1){
+              unset($_SESSION['Login']);
+          }
+          header('Location:index.php');
+      }
 ?> 
  
  <div class="section-header">
@@ -21,13 +30,13 @@
                       <a href="/SaleOnlineWebDeveloper/page/index.php?manager=All" class="nav__mega-child-link">All</a>
                     </li>
                     <?php
-                          while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
+                    while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
                     ?>
                     <li class="nav__mega-child">
                       <a href="/SaleOnlineWebDeveloper/page/index.php?manager=ProductCategory&id=<?php echo $row_danhmuc['id_danhmuc'] ?>" class="nav__mega-child-link"><?php echo $row_danhmuc['name'] ?></a>
                     </li>
                     <?php
-                          }
+                    }
                     ?>
                   </ul>
                 </div>
@@ -51,7 +60,7 @@
         <div class="header__search">
           <div class="header__search-container">
             <form action="/SaleOnlineWebDeveloper/page/index.php?manager=SearchProduct" method="POST" class="header__search-form">
-              <input type="text" class="search__input" placeholder="SEARCH" name="text__keyword" />
+              <input type="text" class="search__input" placeholder="SEARCH" name="text__keyword" autocomplete ="off" />
               <button class="header__search-btn header__search-submit" name="Search__product__keyword" type="submit">
                 <i class="fas fa-search btn__small"></i>
               </button>

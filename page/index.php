@@ -23,6 +23,7 @@
   </head>
   <body>
     <?php
+          session_start();
           include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/header.php';
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/main.php';
