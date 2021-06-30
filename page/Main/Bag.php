@@ -128,9 +128,9 @@ if(isset($_POST['themgiohang'])){
               <button name="btn-update-cart" class="page__cart-btn page__cart-btn-update">
                 Update cart
               </button>
-              <button class="page__cart-btn page__cart-btn-checkout">
+              <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Payment" class="page__cart-btn page__cart-btn-checkout">
                 Checkout
-              </button>
+              </a>
             </div>
           </div>
          

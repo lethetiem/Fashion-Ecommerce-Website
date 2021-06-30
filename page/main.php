@@ -35,6 +35,9 @@
          case 'AccountDashBoard':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/AccountDashBoard.php");
             break;
+         case 'Payment':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Payment.php");
+            break;
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
                break;
