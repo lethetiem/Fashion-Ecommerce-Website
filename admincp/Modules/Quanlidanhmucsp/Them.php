@@ -11,10 +11,10 @@
             <tbody>
                 <tr  class="active-row">
                     <td>
-                        <input class="product__name" type="text" name = "Tendanhmuc">
+                        <input class="product__name" type="text" name = "Tendanhmuc" required>
                     </td>
                     <td>
-                        <input  class="product__value" type="text" name = "Thutu">
+                        <input  class="product__value" type="text" name = "Thutu" required>
                     </td>
                 </tr>
                 <tr class="submit__container">

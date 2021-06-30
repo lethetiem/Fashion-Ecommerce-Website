@@ -1,4 +1,11 @@
-
+<?php
+     session_start();
+    //  $_SESSION['customer'];
+    //      header('Location:"//SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+     
+  
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,10 +26,15 @@
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/details.css">
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/style.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/reset.css" />
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   
+
     <title>HEARTUALL</title>
   </head>
   <body>
     <?php
+          session_start();
           include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/header.php';
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/main.php';

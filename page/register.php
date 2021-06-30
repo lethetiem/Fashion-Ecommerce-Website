@@ -1,3 +1,5 @@
+
+
 <?php
   $mysqli = mysqli_connect("localhost","root","","Sale_online");
 
@@ -9,20 +11,24 @@ if ($mysqli->connect_errno) {
 
 
   
-  if(isset($_POST['btn-save']))
-  {
-      $firstname = $_POST['firstname'];
-      $lastname = $_POST['lastname'];
-      $username = $_POST['username'];
-      $password = md5($_POST['password']);
-      $dang_ky = mysqli_query($mysqli, "INSERT INTO tbl_Register(firstname, lastname, username, password) VALUE('".$firstname."','".$lastname."','".$username."','".$password."')");
+if(isset($_POST["firstname"]) && isset($_POST["lastname"]) && isset($_POST["username"]) && isset($_POST["password"]))
+{
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $username = $_POST['username'];
+    $password = md5($_POST['password']);
+    $dang_ky = mysqli_query($mysqli, "INSERT INTO tbl_register(firstname, lastname, username, password) VALUE('".$firstname."','".$lastname."','".$username."','".$password."')");
 
     if($dang_ky){
-    echo '<p style="color:green">Creat account sucessfully"</p>';
+
+      echo"Registration Successful";
+
     }
+    else{
+      echo"Registration Failed";
 
-
+    }
+      
   }
  
-
-?>
+?> 

@@ -1,21 +1,31 @@
 <?php
-include('/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php');
+    if(isset($_SESSION['Login'])){
+        header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard');
+    }
+?>
+<?php
 if(isset($_POST['Login'])){
-   $username = $_POST['username'];
-   $password = $_POST['password'];
-   $sql_login_index = "SELECT * FROM tbl_register WHERE username = '$username' AND password = '$password'";
-   $row = mysqli_query($mysqli, $sql_login_index);
-   $count = mysqli_num_rows($row);
-   if($count > 0){
-    $row_data = mysqli_fetch_array($row);
-    $_SESSION['btn-save'] = $row_data['lastname'];
-    header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+  $username = $_POST['username'];
+  $password = md5($_POST['password']);
+  if($username == '' || $password == ''){
+    echo '<script>alert("Lam on khong de trong")</script>';
+  }else{
+    $sql_select_register = mysqli_query($mysqli, "SELECT * FROM tbl_register WHERE username = '$username' AND password = '$password' LIMIT 1");
+    $count = mysqli_num_rows($sql_select_register);
+    //$row_login = mysqli_fetch_array($sql_select_register);
+    if($count > 0){
+      $_SESSION['Login'] = $username;
+      //$_SESSION['id_register'] = $row_login['id_register'];
+          header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard');
+     // echo'<script>window.location.href="/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard" </script>';
     }else{
-    echo('<p style = "color: red">Sai ten hoac mat khau!</p>');
+      echo '<script>alert("Tai khoan hoac mat khau khong dung")</script>';
+    }
   }
 }
-  
 ?>
+
+
 
 <div class="container">
         
@@ -33,17 +43,14 @@ if(isset($_POST['Login'])){
           <div id="login">
             <form action="" method="POST">
               <h2 class="customers">REGISTERED CUSTOMERS</h2>
-              <input type="text" class="form-control" placeholder="user name" id ="username" name="username" required />
+              <input type="text" class="form-control" placeholder="user name" id ="username" name="username" />
               <br>
               <input type="password" class="form-control" id ="password" name="password" placeholder="password" />
               <br>
               <a href="#" class="lk"> forgot password?</a>
               <br>
-              <input class="login1" name="Login"    type="submit" id="btn" value="LOG IN">
+                <input class="login1" name="Login"    type="submit" id="btn" value="LOG IN">
               </form>
                 
           </div>
-
-
-
-          </div>
+</div>
