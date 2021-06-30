@@ -49,7 +49,7 @@ if(isset($_POST['themgiohang'])){
 
 
 
-<div class="section-main">
+
       <div class="page">
         <h1 class="page__cart-title">Your Cart</h1> 
 
@@ -149,7 +149,7 @@ if(isset($_POST['themgiohang'])){
 
         
       </div>
-    </div> 
+  
     
 
 
