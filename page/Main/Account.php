@@ -37,7 +37,7 @@ if(isset($_POST['Login'])){
               <a class="bca" >By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</a>
           </p>
           <div class="register_wrap">
-            <a href = "/SaleOnlineWebDeveloper/page/index.php?manager=Register" class = "register" > CREATE ACCOUNT </a>
+            <a href = "/SaleOnlineWebDeveloper/page/index.php?manager=Register" class = "creat_account" > CREATE ACCOUNT </a>
           </div>    
         </div>
           <div id="login">
