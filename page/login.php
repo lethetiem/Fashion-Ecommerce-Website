@@ -12,7 +12,8 @@
 	//$password = mysql_real_escape_string($password);
 
 	//connect to the server and select database
-	$db = mysqli_connect("localhost", "root", "", "Sale_online");
+	// $db = mysqli_connect("localhost", "root", "", "Sale_online");
+	$db = mysqli_connect("localhost", "root", "", "sale_online");
 	//mysqli_select_db("login");
 	//Query the databse for user
 	$result = mysqli_query($db, "select * from tbl_register where username = '$username' and password = '$password' ") or die("Failed to query database " .mysqli_error());

@@ -1,7 +1,7 @@
 <?php
      session_start();
-     //$_SESSION['customer'];
-         //header('Location:"//SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+    //  $_SESSION['customer'];
+    //      header('Location:"//SaleOnlineWebDeveloper/page/index.php?manager=Bag');
      
   
     
