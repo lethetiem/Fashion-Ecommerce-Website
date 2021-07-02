@@ -8,11 +8,28 @@
 
     
   }
-
-.payment_td {
+  .payment_td {
     color: black;
     font-family: Impact, "Arial Narrow Bold";
-    margin-bottom: 10px;
+    
+    font-size: 15px;
+    
+    margin: 20px 0 20px 0px;
+  }
+ 
+
+.paymentdetails_td {
+    color: black;
+    font-family: Arnoldboecklin , fantasy;
+    
+    font-size: 20px;
+    
+    margin: 20px 0 20px 0px;
+  }
+  .paymentdetails_text {
+    color: black;
+    font-family:"Times New Roman";
+    
     font-size: 15px;
     
     margin: 20px 0 20px 0px;

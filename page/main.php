@@ -38,6 +38,9 @@
          case 'Payment':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Payment.php");
             break;
+            case 'orderconfirmation':
+               include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/orderconfirmation.php");
+                  break;
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
                break;

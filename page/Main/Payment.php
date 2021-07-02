@@ -42,12 +42,13 @@
  
              
               
-                  <input class="pay"   type="submit" id="btn_pay" name="btn-pay" value="PAY AND PLACE ORDER">
+                  <input class="pay"   type="submit" id="btn_pay" name="btn_pay" value="PAY AND PLACE ORDER">
               <br>
               
             </form>
             
             <hr width="100%" color="black"  size="2px">
+            <a href="/SaleOnlineWebDeveloper/page/index.php?manager=orderconfirmation" class="bca"> Back to bag</a>
      
           </div>
  </div>
