@@ -1,5 +1,5 @@
 <?php
-     session_start();
+    // session_start();
     //  $_SESSION['customer'];
     //      header('Location:"//SaleOnlineWebDeveloper/page/index.php?manager=Bag');
      
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/style.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/reset.css" />
     <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/payment.css" />
+    <link rel="stylesheet" href="/SaleOnlineWebDeveloper/css/AccountDashBoard.css">
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    
@@ -40,7 +41,6 @@
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/header.php';
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/main.php';
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/footer.php';
-      
     ?>
   </body>
    <script src="/SaleOnlineWebDeveloper/js/script.js"></script> 

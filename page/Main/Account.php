@@ -1,27 +1,27 @@
 <?php
-  //  if(isset($_SESSION['Login'])){
-      //  header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard');
-    //}
+   if(isset($_SESSION['Login'])){
+        header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard');
+    }
 ?>
 <?php
 if(isset($_POST['Login'])){
- $username = $_POST['username'];
+  $username = $_POST['username'];
   $password = md5($_POST['password']);
   if($username == '' || $password == ''){
-   echo '<script>alert("Lam on khong de trong")</script>';
+    echo '<script>alert("Lam on khong de trong")</script>';
   }else{
-   $sql_select_register = mysqli_query($mysqli, "SELECT * FROM tbl_register WHERE username = '$username' AND password = '$password' LIMIT 1");
-   $count = mysqli_num_rows($sql_select_register);
+    $sql_select_register = mysqli_query($mysqli, "SELECT * FROM tbl_register WHERE username = '$username' AND password = '$password' LIMIT 1");
+    $count = mysqli_num_rows($sql_select_register);
     $row_login = mysqli_fetch_array($sql_select_register);
-   if($count > 0){
+    if($count > 0){
       $_SESSION['Login'] = $username;
       $_SESSION['id_register'] = $row_login['id_register'];
           header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard');
-     echo'<script>window.location.href="/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard" </script>';
+    echo'<script>window.location.href="/SaleOnlineWebDeveloper/page/index.php?manager=AccountDashBoard" </script>';
     }else{
-     echo '<script>alert("Tai khoan hoac mat khau khong dung")</script>';
-   }
- }
+      echo '<script>alert("Tai khoan hoac mat khau khong dung")</script>';
+    }
+  }
 }
 ?>
 
@@ -41,7 +41,8 @@ if(isset($_POST['Login'])){
           </div>    
         </div>
           <div id="login">
-            <form id action="" method="POST">
+            <form action="" method="POST">
+            <!--<form id ="login_form" action="/SaleOnlineWebDeveloper/page/login.php" method="POST">-->
             <!--<form id ="login_form" action="/SaleOnlineWebDeveloper/page/login.php" method="POST">-->
               <h2 class="customers">REGISTERED CUSTOMERS</h2>
               <input type="text" class="form-control" placeholder="user name" id ="username" name="username" />
@@ -89,4 +90,5 @@ if(isset($_POST['Login'])){
         });
 
       </script>-->
+      
      
