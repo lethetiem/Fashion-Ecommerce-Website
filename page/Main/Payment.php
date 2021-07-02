@@ -3,9 +3,12 @@ if(isset($_POST['btn-pay'])){
     $firstname=$_POST['firstname'];
     $lastname=$_POST['lastname'];
     $address=$_POST['street_address'];
-    $city=$_POST['City'];
-    $phone_number=$_POST['Phone_number'];
-    $email=$_POST['Email_address'];
+    $city=$_POST['city'];
+    $phone_number=$_POST['phone'];
+    $email=$_POST['email'];
+    $slq_payment = "INSERT INTO tbl_khachhang(firstname, lastname, street_address, email, phone_number, city) VALUES('".$firstname."', '".$lastname."', '".$address."', '".$email."', '".$phone_number."', '".$city."')";
+    $sql_payment_query = mysqli_query($mysqli, $slq_payment);
+    header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=PaymentDetails');
 }
 ?>
 
@@ -50,7 +53,7 @@ if(isset($_POST['btn-pay'])){
             
               <h2 class="payment_td">SHIPPING ADDRESS</h2>
               <hr width="99.5%" color="black"  size="2px">
-            <form id ="payment_form"action="/SaleOnlineWebDeveloper/page/paymentmanager=PaymentDetails" method="POST">
+            <form id ="payment_form"action="" method="POST">
              
               
                 
