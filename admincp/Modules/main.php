@@ -17,8 +17,14 @@
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlisp/Lietke.php");
     }elseif($mnn == 'Quanlisanpham' && $query == 'Sua'){
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlisp/Sua.php");
+    }elseif($mnn == 'Quanlidonhang' && $query =='Them'){
+        include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlidonhang/LietKeDH.php");
+    }elseif($mnn == 'donhang' && $query =='xemdonhang'){
+        include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlidonhang/xemdonhang.php");
     }
     else{
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Welcome.php");    
     }
+   
+    
 ?>
