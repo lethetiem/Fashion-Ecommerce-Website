@@ -51,10 +51,10 @@
         </a>
         <ul>
           <li>
-            <a href="index.php?action=Quanlidanhmucsanpham&query=Them">Quản lý bài viết</a>
+            <a href="index.php?action=Quanlidonhang&query=Them">Quản lý đơn hàng</a>
           </li>
           <li>
-            <a href="index.php?action=Quanlidanhmucsanpham&query=Them">Quản lý danh mục bài viết</a>
+            <a href="index.php?action=Quanlikhachhang&query=Them">Quản lý khách hàng</a>
           </li>
         </ul>
       </li>

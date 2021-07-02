@@ -38,13 +38,13 @@
          case 'Payment':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Payment.php");
             break;
-         case 
+         case 'PaymentDetails':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/PaymentDetails.php");
+            break;
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
                break;
      }
-
-
 
 
      ?>

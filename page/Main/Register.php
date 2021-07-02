@@ -1,15 +1,15 @@
 <?php
-  if(isset($_POST['btn-save'])){
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $sql_register = "INSERT INTO tbl_register(firstname, lastname, username, password) VALUE('$firstname', '$lastname', '$username', '$password')";
-    $sql_register_query = mysqli_query($mysqli, $sql_register);
-    if($sql_register_query){
-      echo '<p style="color:green">Bạn đã đăng kí thành công</p> ';
-    }
-  }
+ // if(isset($_POST['btn-save'])){
+ //   $firstname = $_POST['firstname'];
+ //   $lastname = $_POST['lastname'];
+  //  $username = $_POST['username'];
+ //   $password = $_POST['password'];
+//   $sql_register = "INSERT INTO tbl_register(firstname, lastname, username, password) VALUE('$firstname', '$lastname', '$username', '$password')";
+ //  $sql_register_query = mysqli_query($mysqli, $sql_register);
+ //   if($sql_register_query){
+//      echo '<p style="color:green">Bạn đã đăng kí thành công</p> ';
+ //   }
+ // }
 ?>
 
 
@@ -40,6 +40,7 @@
               
                 
           </div>
+ </div>
           <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script>
         $( "#register_form" ).submit(function( event ) {
@@ -55,15 +56,7 @@
            
 
             
-
-            
-            
-              
-		  	
-            
           });
         
         });
       </script> 
-
-</div>
