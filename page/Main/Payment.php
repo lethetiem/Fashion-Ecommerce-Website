@@ -70,9 +70,9 @@ if(isset($_POST['btn-pay'])){
                   <input type="text" class="payment_text1"  id ="city" name="city" placeholder="City" required />
                 
                     
-                  <input type="text" class="payment_text"  id ="phone" name="phone"  placeholder="Phone_number" required />
+                  <input type="text" class="payment_text"  id ="phone" name="phone"  placeholder="Phone number" required />
              
-                  <input type="text" class="payment_text"  id ="email" name="email" placeholder="Email_address" required />
+                  <input type="text" class="payment_text"  id ="email" name="email" placeholder="Email address" required />
  
              
               
@@ -82,6 +82,7 @@ if(isset($_POST['btn-pay'])){
             </form>
             
             <hr width="100%" color="black"  size="2px">
+            <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Bag" class="bca"> Back to bag</a>
      
           </div>
  </div>

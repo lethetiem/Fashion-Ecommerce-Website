@@ -41,8 +41,9 @@ if(isset($_POST['Login'])){
           </div>    
         </div>
           <div id="login">
-            <form id action="" method="POST">
-            <form id ="login_form" action="/SaleOnlineWebDeveloper/page/login.php" method="POST">
+            <form action="" method="POST">
+            <!--<form id ="login_form" action="/SaleOnlineWebDeveloper/page/login.php" method="POST">-->
+            <!--<form id ="login_form" action="/SaleOnlineWebDeveloper/page/login.php" method="POST">-->
               <h2 class="customers">REGISTERED CUSTOMERS</h2>
               <input type="text" class="form-control" placeholder="user name" id ="username" name="username" />
               <br>
@@ -55,7 +56,6 @@ if(isset($_POST['Login'])){
                 
           </div>
 </div>
-
 <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
                    
           <script>
