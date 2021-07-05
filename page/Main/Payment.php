@@ -3,9 +3,29 @@ if(isset($_POST['btn-pay'])){
     $firstname=$_POST['firstname'];
     $lastname=$_POST['lastname'];
     $address=$_POST['street_address'];
-    $city=$_POST['City'];
-    $phone_number=$_POST['Phone_number'];
-    $email=$_POST['Email_address'];
+    $city=$_POST['city'];
+    $phone_number=$_POST['phone'];
+    $email=$_POST['email'];
+    $slq_payment = "INSERT INTO tbl_khachhang(firstname, lastname, street_address, email, phone_number, city) VALUES('".$firstname."', '".$lastname."', '".$address."', '".$email."', '".$phone_number."', '".$city."')";
+    $sql_payment_query = mysqli_query($mysqli, $slq_payment);
+    if($sql_payment_query){
+        $sql_select_khachhang = mysqli_query($mysqli, "SELECT * FROM tbl_khachhang ORDER BY id_khachhang DESC LIMIT 1");
+        $mahang = rand(0, 9999);
+        $row_khachhang = mysqli_fetch_array($sql_select_khachhang);
+        $id_khachhang = $row_khachhang['id_khachhang'];
+       // $sql_select_giohang = mysqli_query($mysqli, "SELECT * FROM tbl_giohang ORDER BY id_giohang");
+        //$row_giohang = mysqli_fetch_array($sql_select_giohang);
+       // $soluong = $row_giohang['soluong'];
+        //$id_sanpham = $row_giohang['id_sanpham'];
+        for($i = 0; $i < count($_POST['thanhtoan_product_id']); $i++){
+            $id_sanpham = $_POST['thanhtoan_product_id'][$i];
+            $soluong = $_POST['soluong'][$i];
+            $sql_insert_donhang = mysqli_query($mysqli, "INSERT INTO tbl_donhang(id_sanpham, soluong, mahang, id_khachhang) VALUES('".$id_sanpham."', '".$soluong."', '".$mahang."', '".$id_khachhang."')");
+            $sql_delete_payment = mysqli_query($mysqli, "DELETE FROM tbl_giohang WHERE id_sanpham = '$id_sanpham'");
+        }
+    }
+    
+    header('Location:/SaleOnlineWebDeveloper/page/index.php?manager=PaymentDetails');
 }
 ?>
 
@@ -50,7 +70,7 @@ if(isset($_POST['btn-pay'])){
             
               <h2 class="payment_td">SHIPPING ADDRESS</h2>
               <hr width="99.5%" color="black"  size="2px">
-            <form id ="payment_form"action="/SaleOnlineWebDeveloper/page/paymentmanager=PaymentDetails" method="POST">
+            <form id ="payment_form"action="" method="POST">
              
               
                 
@@ -67,18 +87,30 @@ if(isset($_POST['btn-pay'])){
                   <input type="text" class="payment_text1"  id ="city" name="city" placeholder="City" required />
                 
                     
-                  <input type="text" class="payment_text"  id ="phone" name="phone"  placeholder="Phone_number" required />
+                  <input type="text" class="payment_text"  id ="phone" name="phone"  placeholder="Phone number" required />
              
-                  <input type="text" class="payment_text"  id ="email" name="email" placeholder="Email_address" required />
+                  <input type="text" class="payment_text"  id ="email" name="email" placeholder="Email address" required />
+
+                  <?php
+                  $sql_select_giohang = mysqli_query($mysqli, "SELECT * FROM tbl_giohang ORDER BY id_giohang");
+                  while($row_giohang = mysqli_fetch_array($sql_select_giohang)){
+                  ?>
  
-             
+                <input type="hidden" class="payment_text" name="thanhtoan_product_id[]" value="<?php echo $row_giohang['id_sanpham'] ?>">
+                <input type="hidden" class="payment_text" name="soluong[]" value="<?php echo $row_giohang['soluong'] ?>" >
+
+
+                <?php
+                  }
+                ?>
               
                   <input class="pay"   type="submit" id="btn_pay" name="btn-pay" value="PAY AND PLACE ORDER">
               <br>
               
             </form>
             
-            <hr width="100%" color="black"  size="2px">
+            <hr width="100%" color="black"  size="2px"><br>
+            <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Bag" class="bca"> Back to bag</a>
      
           </div>
  </div>

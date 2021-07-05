@@ -8,14 +8,102 @@
 
     
   }
-
-.payment_td {
+  .payment_td {
     color: black;
     font-family: Impact, "Arial Narrow Bold";
-    margin-bottom: 10px;
+    
     font-size: 15px;
     
     margin: 20px 0 20px 0px;
+  }
+  .paymentdetails_head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    order: 1;
+  }
+  .icon_check {
+    width: 0.75rem;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    
+    
+    
+  }
+  
+  .paymentdetails_td1 {
+    width: 30%;
+    margin-right: 3rem;
+    margin-bottom: 5px;
+    color: black;
+    font-family: Arnoldboecklin , fantasy;
+    
+    font-size: 20px;
+    
+    
+  }
+  
+ 
+
+.paymentdetails_td {
+    color: black;
+    font-family:"Times New Roman";
+    font-weight: bold;
+    
+    font-size: 20px;
+    
+    margin: 20px 0 20px 0px;
+  }
+  .paymentdetails_text {
+    color: black;
+    font-family:"Times New Roman";
+    
+    font-size: 15px;
+    
+    margin: 20px 0 20px 0px;
+  }
+  .paymentdetails_texttb1 {
+    padding-left: 150px;
+    width: 50%;
+    color: black;
+    font-family:"Times New Roman";
+    font-weight: bold;
+    
+    font-size: 15px;
+    text-align: left;
+    
+    
+    
+    
+  }
+  .paymentdetails_texttb {
+    color: black;
+    font-family:"Times New Roman";
+    
+    font-size: 16px;
+    text-align: left;
+    
+    
+    
+    
+  }
+  .paymentdetails_tb {
+    width: 100%;
+    height: 200px;
+   
+    
+    
+    
+  }
+
+  .paymentdetails_bd {
+    width: 100%;
+    height: 300px;
+    border: solid 4px black;
+    margin-bottom: 20px;
+    text-align: center;
+    
   }
  
   .payment_text {
@@ -46,3 +134,20 @@
     cursor: pointer;
     text-align: center;
   }
+  .keeponbuying{  
+    margin-left: 70%;     
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Lucida Sans Unicode";
+}
+.keeponbuying:hover{
+    background-color: white;
+    color:black;
+}

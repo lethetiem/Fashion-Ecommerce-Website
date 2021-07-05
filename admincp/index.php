@@ -65,6 +65,7 @@
 <body>
     
     <?php
+        session_start();
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
        //include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/header.php");
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/menu.php");
