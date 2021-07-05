@@ -11,7 +11,6 @@
 </div>
 
 
-
 <div class="container">
         
     <div class="payment">
@@ -25,46 +24,53 @@
           </a>
         </div>
       
-      
+        <?php
+            $sql_select_paymentdetails = "SELECT * FROM tbl_khachhang, tbl_donhang WHERE tbl_khachhang.id_khachhang = tbl_donhang.id_khachhang ORDER BY id_donhang DESC";
+            $sql_select_query = mysqli_query($mysqli, $sql_select_paymentdetails);
+            if($row_paymentdetails = mysqli_fetch_array($sql_select_query)){
+
+        ?>
   
       
       <div class="paymentdetails_text">Thanks for your order </div>
+      <div class="paymentdetails_text">Order code #<?php echo $row_paymentdetails['mahang']?></div>
       <div class="paymentdetails_bd">
       <h2 class="paymentdetails_td">Order information </h2>
       <table class="paymentdetails_tb">
       <tr>
             <td class="paymentdetails_texttb1">Customer name : </td>
-            <td class="paymentdetails_texttb ">bui ngoc thanh</td>
+            <td class="paymentdetails_texttb "><?php echo $row_paymentdetails['firstname'].' '.$row_paymentdetails['lastname']?></td>
             
         </tr>
         <tr>
             <td class="paymentdetails_texttb1">Phone number : </td>
-            <td class="paymentdetails_texttb ">012345678</td>
+            <td class="paymentdetails_texttb "><?php echo $row_paymentdetails['phone_number']?></td>
             
         </tr>
         <tr>
             <td class="paymentdetails_texttb1">Email address : </td>
-            <td class="paymentdetails_texttb ">buingocthanh@gmail.com</td>
+            <td class="paymentdetails_texttb "><?php echo $row_paymentdetails['email']?></td>
             
         </tr>
         <tr>
             <td class="paymentdetails_texttb1"> Street address : </td>
-            <td class="paymentdetails_texttb "> TO 3 HOA HIEP NAM </td>
+            <td class="paymentdetails_texttb "><?php echo $row_paymentdetails['street_address']?></td>
             
         </tr>
         <tr>
             <td class="paymentdetails_texttb1">City : </td>
-            <td class="paymentdetails_texttb ">DANANG</td>
+            <td class="paymentdetails_texttb "><?php echo $row_paymentdetails['city']?></td>
             
         </tr>
 
-
+        <?php
+            }
+        ?>
       </table>
 
       </div>
-      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Bag" class="bca"> Back to ...</a>
-
-      <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Bag" class="keeponbuying">KEEP ON BUYING</a>
+    
+      <a href="/SaleOnlineWebDeveloper/page/index.php" class="keeponbuying">KEEP ON BUYING</a>
 
 
      
@@ -74,3 +80,4 @@
      
     </div>
 </div>
+

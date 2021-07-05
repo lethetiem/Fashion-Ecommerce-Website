@@ -16,7 +16,7 @@
 
 <div class="container">
         
-        <h1 class="account_td">ACCOUNT</h1>
+        <!--<h1 class="account_td">ACCOUNT</h1>-->
   
                 
           <div class="register">
