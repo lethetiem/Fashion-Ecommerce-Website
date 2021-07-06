@@ -32,9 +32,9 @@
             <form id ="login_form" action="" method="POST">
             <!--<form id ="login_form" action="/SaleOnlineWebDeveloper/page/login.php" method="POST">-->
               <h2 class="customers">REGISTERED CUSTOMERS</h2>
-              <input type="text" class="form-control" placeholder="user name" id ="username" name="username" />
+              <input type="text" class="usname" placeholder="user name" id ="username" name="username" />
               <br>
-              <input type="password" class="form-control" id ="password" name="password" placeholder="password" />
+              <input type="password" class="usname" id ="password" name="password" placeholder="password" />
               <br>
               <a href="#" class="lk"> forgot password?</a>
               <br>

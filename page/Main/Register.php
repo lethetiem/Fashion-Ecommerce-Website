@@ -14,9 +14,9 @@
               <input type="text" class="flname"  id ="lastname" name="lastname" placeholder="last name" required />
               <br>
               
-              <input type="text" placeholder="user name" id ="username" name="username" required />
+              <input type="text" class="usname" placeholder="user name" id ="username" name="username" required />
               <br>
-              <input type="password"  id ="password" name="password" placeholder="password"required />
+              <input type="password" class="usname" id ="password" name="password" placeholder="password"required />
               
               <br>
               <input class="login2"   type="submit" id="btn" name="btn-save" value="CREATE">
