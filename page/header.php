@@ -60,7 +60,7 @@
         <div class="header__search">
           <div class="header__search-container">
             <form action="/SaleOnlineWebDeveloper/page/index.php?manager=SearchProduct" method="POST" class="header__search-form">
-              <input type="text" class="search__input" placeholder="SEARCH" name="text__keyword" autocomplete ="off" />
+              <input type="text" id="btnSearch" class="search__input" placeholder="SEARCH" name="text__keyword" autocomplete ="off" />
               <button class="header__search-btn header__search-submit" name="Search__product__keyword" type="submit">
                 <i class="fas fa-search btn__small"></i>
               </button>
