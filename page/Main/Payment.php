@@ -47,7 +47,7 @@ if(isset($_POST['btn-pay'])){
 
 <div class="container">
         
-<div class="payment">
+    <div class="payment">
   
       <h1 class="payment_td">SHIPPING</h1>
     
@@ -98,5 +98,6 @@ if(isset($_POST['btn-pay'])){
             <hr width="100%" color="black"  size="2px"><br>
             <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Bag" class="bca"> Back to bag</a>
      
-          </div>
- </div>
+    </div>
+ 
+</div>
