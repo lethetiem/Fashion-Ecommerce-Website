@@ -1,18 +1,6 @@
 <?php
-    $sql_select_khachhang = "SELECT * FROM tbl_khachhang, tbl_giaodich WHERE tbl_khachhang.id_khachhang = tbl_giaodich.id_khachhang ORDER BY tbl_khachhang.id_khachhang DESC";
+    $sql_select_khachhang = "SELECT * FROM tbl_khachhang, tbl_giaodich WHERE tbl_khachhang.id_khachhang = tbl_giaodich.id_khachhang GROUP BY tbl_giaodich.magiaodich ORDER BY tbl_khachhang.id_khachhang DESC";
     $sql_select_query = mysqli_query($mysqli, $sql_select_khachhang); 
-?>
-
-<?php
-if(isset($_GET['action']) == 'giaodich' && $_GET['query'] == 'xemgiaodich'){
-    $magiaodich = $_GET['khachhang'];
-}else{
-    $magiaodich = " ";
-}
-$sql_select = "SELECT * FROM tbl_giaodich, tbl_khachhang, tbl_sanpham WHERE tbl_khachhang.id_khachhang = tbl_giaodich.id_khachhang
-    AND tbl_giaodich.id_sanpham = tbl_sanpham.id_sanpham AND tbl_giaodich.magiaodich = '$magiaodich' GROUP BY tbl_giaodich.magiaodich
-     ORDER BY tbl_giaodich.id_giaodich DESC";
-$sql_select_query = mysqli_query($mysqli, $sql_select);
 ?>
 
 
@@ -43,7 +31,7 @@ $sql_select_query = mysqli_query($mysqli, $sql_select);
                 <td><?php echo $row_khachhang['email']?></td>
                 <td><?php echo $row_khachhang['ngaythang']?></td>
                 <td>
-                    <a href = "?action=giaodich&query=xemgiaodich&khachhang=<?php echo $row_khachhang['magiaodich']?>"><!--<i class="fas fa-cog btn-change-prodcut"></i>-->Xem giao dịch</a>
+                    <a href = "index.php?action=giaodich&query=xemgiaodich&khachhang=<?php echo $row_khachhang['magiaodich']?>"><!--<i class="fas fa-cog btn-change-prodcut"></i>-->Xem giao dịch</a>
                 </td>
             </tr>
             <?php
