@@ -1,26 +1,3 @@
-
- 
-    <!-- //  session_start();
-    //  include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
-    //  if(isset($_POST['login'])){
-    //      $username = $_POST['username'];
-    //      $password = md5($_POST['password']);
-    //        $sql = "SELECT * FROM tbl_admin WHERE username = '$username' AND password = '$password'";
-    //      //$sql = "SELECT * FROM tbl_loginadmin WHERE username = '$username' AND password = '$password'";
-        
-    //      $row = mysqli_query($mysqli, $sql);
-    //      $count = mysqli_num_rows($row);
-    //      if($count > 0){
-    //          $_SESSION['login'] = $username;
-    //          header('Location:/SaleOnlineWebDeveloper/admincp/index.php');
-    //      }else{
-    //          header('Location:/SaleOnlineWebDeveloper/admincp/login.php');
-    //      }  
-    // }
-  -->
-
- 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,12 +17,6 @@
             <p><input type="text" placeholder="Admin" id="username" name="username"></p>
             <p><input type="password" placeholder="Password" id="password" name="password"></p>
             <p><input type="submit" id="dangnhap" value="Log in"></p>
-            
-        <!-- <form action="/SaleOnlineWebDeveloper/admincp/login.php" method="POST" class="login-container">
-            <p><input name="username" type="text" placeholder="Admin"></p>
-            <p><input name="password" type="password" placeholder="Password"></p>
-            <p><input name = "login" type="submit" value="Log in"></p> 
-        </form> -->
     </div>
     <p id = "response"> </p>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

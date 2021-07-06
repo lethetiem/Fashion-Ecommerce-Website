@@ -11,12 +11,12 @@ if(isset($_POST['themgiohang'])){
   $count = mysqli_num_rows($sql_select_giohang);
   if($count > 0){
     $row_sanpham = mysqli_fetch_array($sql_select_giohang);
-    $soluong = $row_sanpham['soluong'] + 1;
-    $sql = "UPDATE tbl_giohang SET soluong = '$soluong' WHERE id_sanpham = '$id_sanpham'";
+    $soluong = $row_sanpham['soluongmua'] + 1;
+    $sql = "UPDATE tbl_giohang SET soluongmua = '$soluong' WHERE id_sanpham = '$id_sanpham'";
 
   }else{
     $soluong = $soluong;
-    $sql = "INSERT INTO tbl_giohang(tensp, giasp, soluong, hinhanh, id_sanpham) value('$tensp', '$giasp', '$soluong', '$hinhanh', '$id_sanpham')";
+    $sql = "INSERT INTO tbl_giohang(tensp, giasp, soluongmua, hinhanh, id_sanpham) value('$tensp', '$giasp', '$soluong', '$hinhanh', '$id_sanpham')";
   }
   
   $insert_rows = mysqli_query($mysqli, $sql);
@@ -31,7 +31,7 @@ if(isset($_POST['themgiohang'])){
      if($soluong == 0){
        $sql_delete_cart = mysqli_query($mysqli, "DELETE FROM tbl_giohang WHERE id_sanpham = '$id_sanpham'");
      }else{
-      $sql_update_cart = mysqli_query($mysqli, "UPDATE tbl_giohang SET soluong = '$soluong' WHERE id_sanpham ='$id_sanpham' ");
+      $sql_update_cart = mysqli_query($mysqli, "UPDATE tbl_giohang SET soluongmua = '$soluong' WHERE id_sanpham ='$id_sanpham' ");
      }
   }
  
@@ -70,7 +70,7 @@ if(isset($_POST['themgiohang'])){
           $i = 0;
           $total = 0;
           while($row_fetch_giohang = mysqli_fetch_array($sql_giohang)){
-            $subtotal = $row_fetch_giohang['soluong'] * $row_fetch_giohang['giasp'];
+            $subtotal = $row_fetch_giohang['soluongmua'] * $row_fetch_giohang['giasp'];
             $total += $subtotal;
             $i++;
           ?>    
@@ -97,7 +97,7 @@ if(isset($_POST['themgiohang'])){
                  <!-- <a href="?manager=Bag&tru=" class="page__cart-product-btn">-</a>
                  <a name="add__number[]" href="?manager=Bag&cong=" class="page__cart-product-btn">+</a>-->
                 <input type="hidden" name ="product__id[]" class="page__cart-product-input" value="<?php echo $row_fetch_giohang['id_sanpham'] ?>" />
-                <input type="number" name ="number__[]" min = "0" max = "15" class="page__cart-product-input" value="<?php echo $row_fetch_giohang['soluong']?>" />
+                <input type="number" name ="number__[]" min = "0" max = "15" class="page__cart-product-input" value="<?php echo $row_fetch_giohang['soluongmua']?>" />
 
                 </div>
                 <div class="page__cart-product-price">

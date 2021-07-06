@@ -21,6 +21,8 @@
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlidonhang/LietKeDH.php");
     }elseif($mnn == 'donhang' && $query =='xemdonhang'){
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlidonhang/xemdonhang.php");
+    }elseif($mnn == 'Quanlikhachhang' && $query == 'Them'){
+        include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Quanlikhachhang/Xuly.php");
     }
     else{
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/Welcome.php");    

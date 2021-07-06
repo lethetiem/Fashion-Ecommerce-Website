@@ -25,7 +25,7 @@
         </div>
       
         <?php
-            $sql_select_paymentdetails = "SELECT * FROM tbl_khachhang, tbl_donhang WHERE tbl_khachhang.id_khachhang = tbl_donhang.id_khachhang ORDER BY id_donhang DESC";
+            $sql_select_paymentdetails = "SELECT * FROM tbl_khachhang, tbl_donhang WHERE tbl_khachhang.id_khachhang = tbl_donhang.id_khachhang ORDER BY tbl_donhang.id_donhang DESC";
             $sql_select_query = mysqli_query($mysqli, $sql_select_paymentdetails);
             if($row_paymentdetails = mysqli_fetch_array($sql_select_query)){
 
