@@ -61,8 +61,9 @@
                 <td>
                     <!--<a href="index.php?action=donhang&query=xemdonhang">Xem đơn hàng</a>-->
                     <a href = "?action=xoadonhang&mahang=<?php echo $row_order['mahang']?>"><i class="fas fa-times btn-delete-product"></i></a> 
-                    <a href = "?action=donhang&query=xemdonhang&mahang=<?php echo $row_order['mahang']?>"><i class="fas fa-cog btn-change-prodcut"></i></a>
+                    <a href = "?action=donhang&query=xemdonhang&mahang=<?php echo $row_order['mahang']?>"><i class="fas fa-search"></i></a>
                 </td>
+                <!--<i class="fas fa-cog btn-change-prodcut"></i>-->
 
             </tr>
             <?php

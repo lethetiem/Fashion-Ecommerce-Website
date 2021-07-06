@@ -38,6 +38,9 @@
          case 'Payment':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Payment.php");
             break;
+         case 'logout':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/logout.php");
+             break;
          case 'PaymentDetails':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/PaymentDetails.php");
             break;

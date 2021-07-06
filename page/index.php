@@ -1,7 +1,9 @@
 <?php
-    // session_start();
-    //  $_SESSION['customer'];
-    //      header('Location:"//SaleOnlineWebDeveloper/page/index.php?manager=Bag');
+    session_start();
+    // if(!isset($_SESSION['current_login'])){
+    //   header('Location:/SaleOnlineWebDeveloper/page/index.php');
+      
+    //   }
      
   
     
@@ -36,7 +38,7 @@
   </head>
   <body>
     <?php
-         session_start();
+        // session_start();
           include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/header.php';
           include '/xampp/htdocs/SaleOnlineWebDeveloper/page/main.php';

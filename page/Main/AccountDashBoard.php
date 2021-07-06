@@ -1,4 +1,7 @@
+<?php
+  $user= $_SESSION['current_user'];
 
+?>
 <div class = "title2">ACCOUNT DASHBOARD</div>
 <div class = "container-table">
     <div class = "row">
@@ -7,8 +10,8 @@
                 <p>ACCOUNT OVERVIEW</p>
                 <div class = "username">
                 <?php
-                if(isset($_SESSION['Login'])){
-                echo $_SESSION['Login'];
+                if(isset($user['username'])){
+                echo $user['username'];
                                         
                 }
                 ?>
@@ -36,7 +39,7 @@
     </div>   
 </div>
 <div >
-    <a href="?logout=1"><button class = "log-out">LOG OUT</button>  </a>
+    <a href="/SaleOnlineWebDeveloper/page/Main/logout.php" class = "log-out">LOG OUT  </a>
   
  </div>
 
@@ -44,17 +47,20 @@
   
 
 
-<?php
-    if(isset($_SESSION['Login'])){
-        // echo $_SESSION['Login'];
-    }elseif(isset($_GET['logout'])){
-        $id = $_GET['logout'];
-        if($id == 1){
-            unset($_SESSION['Login']);
-        }
-        header('Location:index.php');
-    }
-?>
+ <?php
+//     if(isset($_SESSION['current_user'])){
+//          //echo $_SESSION['Login'];
+//    }elseif(isset($_GET['logout'])){
+//         $id = $_GET['logout'];
+//         if($id == 1){
+//             //session_unset();
+//             unset($_SESSION['current_user']);
+//         }
+//             header('Location:index.php');
+        
+        
+//     }
+?> 
 
 
 
