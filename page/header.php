@@ -60,7 +60,7 @@
         <div class="header__search">
           <div class="header__search-container">
             <form action="/SaleOnlineWebDeveloper/page/index.php?manager=SearchProduct" method="POST" class="header__search-form">
-              <input type="text" id="btnSearch" class="search__input" placeholder="SEARCH" name="text__keyword" autocomplete ="off" />
+              <input type="text" class="search__input" placeholder="SEARCH" name="text__keyword" autocomplete ="off" />
               <button class="header__search-btn header__search-submit" name="Search__product__keyword" type="submit">
                 <i class="fas fa-search btn__small"></i>
               </button>
@@ -72,4 +72,16 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.search__input').keyup(function(){
+        var txt = $('.search__input').val();
+        $_POST('ajax.php', {data:txt}, function(data){
+          
+        })
+      })
+    })
+    </script>
   

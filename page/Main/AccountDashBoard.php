@@ -19,12 +19,14 @@
             </div>
         </div>
         <div class = "colum">
-            <div class = "title3">
-                <div class = "recent">
-                <p>RECENT ORDER</p>
+                 <div class = "title3">
+                    <div class = "recent">
+                    <p>RECENT ORDER</p>
                 
                 <div class = "history">
-                <p >You have not placed any orders yet.</p>   
+                    <p >You have not placed any orders yet.</p>  
+                    <br>
+                    <br>
                 </div>
                 </div>
             </div> 

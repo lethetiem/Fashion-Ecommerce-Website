@@ -13,38 +13,44 @@
     display: table-cell;
     padding-left: 30px;
     font-weight:bold ;
+    margin-bottom: 30px;
     
   }
   .row{
     display: table-row;
     margin-left: 30px;
   }
-   .title3 .username {
+    .username {
     font-weight: normal;
     font-size: 13px;
     margin-top: 10px;
   
   }
-  .title3 .recent{
+  .recent{
     margin-left: 50px;
   }
-  .title3 .history{
+   .history{
     font-weight: normal;
     margin-top: 10px;
     font-size: 13px;
+  }
+   .check{
+    font-size: 13px;
+    font-weight: normal;
+    color: grey;
   }
   .title4{
     margin-top: 30px;
     margin-left: 30px;
     font-weight: bold;
   }
-   .title4 .edit-address{
+    .edit-address{
     font-size: 13px;
     font-weight: normal;
     color: grey;
     
   }
-   .title4 .edit-address:hover{
+   .edit-address:hover{
     color: black;
     text-decoration-line: underline;
   }
@@ -65,3 +71,5 @@
     text-decoration-line: underline;
   
   }
+
+  
