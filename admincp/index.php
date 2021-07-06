@@ -1,44 +1,11 @@
 <?php
-    //  session_start();
-    
-    //  if(!isset($_SESSION['login']) ){
-    //      header('Location:login.php');
-     
-         
-    //  }
-    
+     session_start();
+     if(!isset($_SESSION['loggedin']) ){
+         header('Location:login.php');
+        exit ();
+        
+     }    
 ?>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $("#login-admin").submit(function(event){
-            event.preventDefault();
-            var username = $("#username").val();
-            var password = $("#password").val();
-            if(username == "" || password == ""){
-                alert('Please fill in the blanks');
-            }
-            else{
-                
-                $.ajax({
-                type: "POST",
-                url:'/SaleOnlineWebDeveloper/admincp/ajax.php' ,
-                data:  $( this ).serializeArray(),
-                success: function(response){
-                  response = JSON.parse(response);
-                  if(response.status == 0){
-                      alert(response.message);
-                  }
-                  else{
-                      alert(response.message);
-                      window.location.href = "index.php";
-                  }
-                },   
-            });
-            }
-        });
-    });
-    </script>
 
 
 <!DOCTYPE html>
@@ -65,7 +32,7 @@
 <body>
     
     <?php
-        session_start();
+       //session_start();
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
        //include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/header.php");
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/menu.php");

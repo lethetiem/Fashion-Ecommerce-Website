@@ -1,5 +1,5 @@
 <?php
-//include 'login.php';
+session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -11,6 +11,8 @@ $result = mysqli_query($db, "select * from tbl_loginadmin where username = '$use
 $row = mysqli_fetch_array($result);
 
 if(mysqli_num_rows($result)==1){
+	
+	$_SESSION['loggedin'] = '1';
 	echo json_encode(array(
 		'status' => 1,
 		'message' => 'Login successful!'

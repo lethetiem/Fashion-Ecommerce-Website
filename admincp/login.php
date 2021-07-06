@@ -15,11 +15,11 @@
     //          header('Location:/SaleOnlineWebDeveloper/admincp/index.php');
     //      }else{
     //          header('Location:/SaleOnlineWebDeveloper/admincp/login.php');
-    //      } 
+    //      }  
     // }
   -->
 
-
+ 
 
 <!DOCTYPE html>
 <html lang="en">
