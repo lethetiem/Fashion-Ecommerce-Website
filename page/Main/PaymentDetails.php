@@ -18,7 +18,7 @@
           <a href="#" class="icon_check">
             <i class="fas fa-check-circle"></i>
           </a>
-          <a href="#" class="paymentdetails_td1">
+            <a href="#" class="paymentdetails_td1">
             
           You ordered succeed 
           </a>
@@ -32,12 +32,12 @@
         ?>
   
       
-      <div class="paymentdetails_text">Thanks for your order </div>
-      <div class="paymentdetails_text">Order code #<?php echo $row_paymentdetails['mahang']?></div>
-      <div class="paymentdetails_bd">
-      <h2 class="paymentdetails_td">Order information </h2>
-      <table class="paymentdetails_tb">
-      <tr>
+        <div class="paymentdetails_text">Thanks for your order </div>
+        <div class="paymentdetails_text">Order code #<?php echo $row_paymentdetails['mahang']?></div>
+        <div class="paymentdetails_bd">
+        <h2 class="paymentdetails_td">Order information </h2>
+        <table class="paymentdetails_tb">
+        <tr>
             <td class="paymentdetails_texttb1">Customer name : </td>
             <td class="paymentdetails_texttb "><?php echo $row_paymentdetails['firstname'].' '.$row_paymentdetails['lastname']?></td>
             

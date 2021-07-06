@@ -25,6 +25,7 @@
                 
                 <div class = "history">
                 <p >You have not placed any orders yet.</p>   
+               
                 </div>
                 </div>
             </div> 
@@ -39,6 +40,9 @@
     </div>   
 </div>
 <div >
+
+
+    
     <a href="/SaleOnlineWebDeveloper/page/Main/logout.php" class = "log-out">LOG OUT  </a>
   
  </div>

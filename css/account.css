@@ -72,16 +72,16 @@ input {
   height: 35px;
   margin-bottom: 30px;
 }
-.creat_account {
+/* .creat_account {
   color: white;
   
 
   cursor: pointer;
   
-}
+} */
 
-.login1 {
-  width: 506px;
+ .login1 {
+  width: 80%;
   height: 35px;
   margin-top: 20px;
   background-color: black;
@@ -89,6 +89,15 @@ input {
   cursor: pointer;
   text-align: center;
 }
+.login2 {
+  width: 57%;
+  height: 35px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+} 
 
 .flname {
   width: 246px;
@@ -105,7 +114,28 @@ input {
 .lk {
   float: right;
   color: black;
-  margin-right: 130px;
+  margin-right: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: x-small;
+}
+.creat_account{  
+  margin-left: 1%;     
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  margin-top: 5%;
+  
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Lucida Sans Unicode";
+}
+.creat_account:hover{
+  background-color:black;
+  color:white;
 }

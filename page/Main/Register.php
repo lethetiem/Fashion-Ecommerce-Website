@@ -1,16 +1,16 @@
-<?php
- if(isset($_POST['btn-save'])){
-   $firstname = $_POST['firstname'];
-   $lastname = $_POST['lastname'];
-   $username = $_POST['username'];
-   $password = $_POST['password'];
-  $sql_register = "INSERT INTO tbl_register(firstname, lastname, username, password) VALUE('$firstname', '$lastname', '$username', '$password')";
-  $sql_register_query = mysqli_query($mysqli, $sql_register);
-   if($sql_register_query){
-     echo '<p style="color:green">Bạn đã đăng kí thành công</p> ';
-   }
- }
-?>
+ <?php
+//  if(isset($_POST['btn-save'])){
+//    $firstname = $_POST['firstname'];
+//    $lastname = $_POST['lastname'];
+//    $username = $_POST['username'];
+//    $password = $_POST['password'];
+//   $sql_register = "INSERT INTO tbl_register(firstname, lastname, username, password) VALUE('$firstname', '$lastname', '$username', '$password')";
+//   $sql_register_query = mysqli_query($mysqli, $sql_register);
+//    if($sql_register_query){
+//      echo '<p style="color:green">Bạn đã đăng kí thành công</p> ';
+//    }
+//  }
+?> 
 
 
 
@@ -32,7 +32,7 @@
               <input type="password"  id ="password" name="password" placeholder="password"required />
               
               <br>
-              <input class="login1"   type="submit" id="btn" name="btn-save" value="CREATE">
+              <input class="login2"   type="submit" id="btn" name="btn-save" value="CREATE">
               <br>
               <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Account&id=1" class="bca"> Back to login</a>
             </form>
