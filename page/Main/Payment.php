@@ -13,14 +13,11 @@ if(isset($_POST['btn-pay'])){
         $mahang = rand(0, 9999);
         $row_khachhang = mysqli_fetch_array($sql_select_khachhang);
         $id_khachhang = $row_khachhang['id_khachhang'];
-       // $sql_select_giohang = mysqli_query($mysqli, "SELECT * FROM tbl_giohang ORDER BY id_giohang");
-        //$row_giohang = mysqli_fetch_array($sql_select_giohang);
-       // $soluong = $row_giohang['soluong'];
-        //$id_sanpham = $row_giohang['id_sanpham'];
         for($i = 0; $i < count($_POST['thanhtoan_product_id']); $i++){
             $id_sanpham = $_POST['thanhtoan_product_id'][$i];
-            $soluong = $_POST['soluong'][$i];
-            $sql_insert_donhang = mysqli_query($mysqli, "INSERT INTO tbl_donhang(id_sanpham, soluong, mahang, id_khachhang) VALUES('".$id_sanpham."', '".$soluong."', '".$mahang."', '".$id_khachhang."')");
+            $soluong = $_POST['soluongmua'][$i];
+            $sql_insert_donhang = mysqli_query($mysqli, "INSERT INTO tbl_donhang(id_sanpham, soluong, mahangmua, id_khachhang) VALUES('".$id_sanpham."', '".$soluong."', '".$mahang."', '".$id_khachhang."')");
+            $sql_insert_giaodich = mysqli_query($mysqli, "INSERT INTO tbl_giaodich(id_sanpham, soluong, magiaodich, id_khachhang) VALUES('".$id_sanpham."','".$soluong."', '".$mahang."', '".$id_khachhang."')");
             $sql_delete_payment = mysqli_query($mysqli, "DELETE FROM tbl_giohang WHERE id_sanpham = '$id_sanpham'");
         }
     }
@@ -97,7 +94,7 @@ if(isset($_POST['btn-pay'])){
                   ?>
  
                 <input type="hidden" class="payment_text" name="thanhtoan_product_id[]" value="<?php echo $row_giohang['id_sanpham'] ?>">
-                <input type="hidden" class="payment_text" name="soluong[]" value="<?php echo $row_giohang['soluong'] ?>" >
+                <input type="hidden" class="payment_text" name="soluongmua[]" value="<?php echo $row_giohang['soluongmua'] ?>" >
 
 
                 <?php
