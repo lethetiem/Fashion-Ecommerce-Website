@@ -2,20 +2,6 @@
     <h1>FEATURES</h1>
 </div>
 <section class = "feature" id = "feature">
-<!-- <div class = "row">
-     <div class = "image-container"> 
-          <div class = "big-image"> 
-               <img src = "https://cdn.shopify.com/s/files/1/0087/6193/3920/articles/Stussy_Our_Legacy_cover_1080x.jpg?v=1617650446" alt="">
-          </div>
-          <div class = "small-image">
-               <img src ="https://cdn.shopify.com/s/files/1/0087/6193/3920/articles/Stussy_SP21_Lookbook_Cover_1080x.jpg?v=1611622440" alt="">
-               
-               <img src="https://cdn.shopify.com/s/files/1/0087/6193/3920/articles/Nike_3.5_Cover_1080x.jpg?v=1611601196" alt=""> 
-               <img src="https://cdn.shopify.com/s/files/1/0087/6193/3920/articles/Dilla-StonesThrow-121107_540x.jpg?v=1572913964" alt="">
-               <img src="https://cdn.shopify.com/s/files/1/0087/6193/3920/articles/Stussy-HO20-Lookbook-Womens-Cover_540x.jpg?v=1604103154" alt="">
-            </div>
-      </div>
-</div> -->
 <div class = "img-container">
     <div class = "image">
         <img src="https://cdn.shopify.com/s/files/1/0087/6193/3920/articles/Stussy_Our_Legacy_cover_1080x.jpg?v=1617650446" alt="">

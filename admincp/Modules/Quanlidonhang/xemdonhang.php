@@ -1,12 +1,12 @@
 <div class="list-table">
     <?php
-      /*  if(isset($_POST['capnhapdonhang'])){
+        if(isset($_POST['capnhapdonhang'])){
             $xuly_donhang = $_POST['xulydonhang'];
             $xuly_mahang = $_POST['xulymahang'];
             $sql_update_donhang = "UPDATE tbl_donhang SET tinhtrang='$xuly_donhang' WHERE mahang='$xuly_mahang'";
             $sql_update_query = mysqli_query($mysqli, $sql_update_donhang);
             header('Location:index.php?action=Quanlidonhang&query=Them');
-        }*/
+        }
     ?>
     <?php
         $mathang = $_GET['mahang'];

@@ -1,8 +1,9 @@
 <?php
-  if(isset($_GET['Dangxuat']) && $_GET['Dangxuat'] == 1){
-    unset($_SESSION['login']);
-    header('Location:login.php');
-  }
+ 
+  // if(isset($_GET['Dangxuat']) && $_GET['Dangxuat'] == 1){
+  //   unset($_SESSION['login']);
+  //   header('Location:login.php');
+  // }
 
 ?>
 
@@ -60,7 +61,8 @@
       </li>
 
       <li class="sub-menu">
-         <a href="index.php?Dangxuat=1">Log Out: <?php if(isset($_SESSION['login'])){echo $_SESSION['login'];}?></a>
+        <!-- <a href="index.php?Dangxuat=1" >Log Out: <?php if(isset($_SESSION['loggin'])){echo $_SESSION['login'];}?></a> -->
+        <a href="logout.php">Log out</a>
       </li>
       
       

@@ -16,8 +16,8 @@ if(isset($_POST['btn-pay'])){
         for($i = 0; $i < count($_POST['thanhtoan_product_id']); $i++){
             $id_sanpham = $_POST['thanhtoan_product_id'][$i];
             $soluong = $_POST['soluongmua'][$i];
-            $sql_insert_donhang = mysqli_query($mysqli, "INSERT INTO tbl_donhang(id_sanpham, soluong, mahangmua, id_khachhang) VALUES('".$id_sanpham."', '".$soluong."', '".$mahang."', '".$id_khachhang."')");
-            $sql_insert_giaodich = mysqli_query($mysqli, "INSERT INTO tbl_giaodich(id_sanpham, soluong, magiaodich, id_khachhang) VALUES('".$id_sanpham."','".$soluong."', '".$mahang."', '".$id_khachhang."')");
+            $sql_insert_donhang = mysqli_query($mysqli, "INSERT INTO tbl_donhang(id_sanpham, soluongmua, mahang, id_khachhang) VALUES('".$id_sanpham."', '".$soluong."', '".$mahang."', '".$id_khachhang."')");
+            $sql_insert_giaodich = mysqli_query($mysqli, "INSERT INTO tbl_giaodich(id_sanpham, soluongmua, magiaodich, id_khachhang) VALUES('".$id_sanpham."','".$soluong."', '".$mahang."', '".$id_khachhang."')");
             $sql_delete_payment = mysqli_query($mysqli, "DELETE FROM tbl_giohang WHERE id_sanpham = '$id_sanpham'");
         }
     }
@@ -42,17 +42,6 @@ if(isset($_POST['btn-pay'])){
 
 
 
-
-<!--<p align = "center">PAYMENT</p>
-<p align = "center">Shipping</p>
-<p align ="center">Shipping Address</p>
-<br>
-<br>
-<br>
-<form align = "center" action="" method="POST">
-<input tyoe="text" name="Firstname">    <input type="text" name="Lastname">
-
-</form>-->
 
 
 

@@ -1,10 +1,10 @@
 <?php
-    //  session_start();
-    
-    //  if(!isset($_SESSION['login'])){
-    //      header('Location:login.php');
-    //  }
-    
+     session_start();
+     if(!isset($_SESSION['loggedin']) ){
+         header('Location:login.php');
+        exit ();
+        
+     }    
 ?>
 
 
@@ -32,7 +32,7 @@
 <body>
     
     <?php
-        session_start();
+       //session_start();
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/config/config.php");
        //include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/header.php");
         include("/xampp/htdocs/SaleOnlineWebDeveloper/admincp/Modules/layout/menu.php");

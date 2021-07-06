@@ -1,6 +1,6 @@
 <?php
     $sql_select = "SELECT * FROM tbl_khachhang, tbl_donhang WHERE tbl_donhang.id_khachhang = tbl_khachhang.id_khachhang
-    ORDER BY tbl_donhang.id_donhang DESC";
+    GROUP BY tbl_khachhang.id_khachhang";
     $sql_select_query = mysqli_query($mysqli, $sql_select); 
 ?>
 
@@ -44,8 +44,9 @@
                 <td>
                     <!--<a href="index.php?action=donhang&query=xemdonhang">Xem đơn hàng</a>-->
                     <a href = "?action=xoadonhang&mahang=<?php echo $row_order['mahang']?>"><i class="fas fa-times btn-delete-product"></i></a> 
-                    <a href = "index.php?action=donhang&query=xemdonhang&mahang=<?php echo $row_order['mahang']?>"><i class="fas fa-cog btn-change-prodcut"></i></a>
+                    <a href = "index.php?action=donhang&query=xemdonhang&mahang=<?php echo $row_order['mahang']?>"><i class="fas fa-search"></i></a>
                 </td>
+                <!--<i class="fas fa-cog btn-change-prodcut"></i>-->
 
             </tr>
             <?php
