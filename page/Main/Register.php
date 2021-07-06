@@ -1,5 +1,5 @@
 <?php
- if(isset($_POST['btn-save'])){
+ /*if(isset($_POST['btn-save'])){
    $firstname = $_POST['firstname'];
    $lastname = $_POST['lastname'];
    $username = $_POST['username'];
@@ -9,7 +9,7 @@
    if($sql_register_query){
      echo '<p style="color:green">Bạn đã đăng kí thành công</p> ';
    }
- }
+ }*/
 ?>
 
 

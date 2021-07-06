@@ -44,6 +44,9 @@
          case 'PaymentDetails':
          include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/PaymentDetails.php");
             break;
+         case 'ViewOrder':
+         include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/ViewOrder.php");
+            break;
          default:
             include("/xampp/htdocs/SaleOnlineWebDeveloper/page/Main/Home.php");
                break;
