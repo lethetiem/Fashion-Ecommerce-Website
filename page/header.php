@@ -45,6 +45,13 @@
             <div class="nav__search">
               <button class="nav__search-btn">Search</button>
             </div>
+            <?php
+            if(isset($_SESSION['current_login'])){
+            ?>
+            <a href="/SaleOnlineWebDeveloper/page/index.php?manager=ViewOrder" class = "nav__item-right">View Orders</a>
+            <?php
+            }
+            ?>
             <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Features" class="nav__item-right">Features</a>
             <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Account&id=1" class="nav__item-right">Account</a> 
             <a href="/SaleOnlineWebDeveloper/page/index.php?manager=Bag" class="nav__item-right">Bag</a>
