@@ -1,4 +1,4 @@
-# SaleOnlineWebDeveloper
+# Fashion Ecommerce Websites
 ### Git Rule
 + Không push code lên branch master/main, chỉ được push và tạo pull request từ branch feature vào branch develop
 + Commit và push code lên github trong khoảng thời gian từ 10h sáng đến 10h tối, không nhận bất kì lần pull request nào quá khoảng thời gian này
